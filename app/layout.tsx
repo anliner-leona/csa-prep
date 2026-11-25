@@ -14,9 +14,9 @@ const geistMono = Geist_Mono({
 })
 
 export const metadata: Metadata = {
-  title: 'CSA Mock Exam Trainer',
+  title: 'ServiceNow Certification Exam Trainer',
   description:
-    'Practice all 280 ServiceNow Certified System Administrator (CSA) mock exam questions with instant feedback, a timer, and detailed results.',
+    'Practice 767 ServiceNow CSA, CAD, and CIS-DF mock exam questions with instant feedback, matching exercises, a timer, and scored results.',
   generator: 'v0.app',
   icons: {
     icon: [

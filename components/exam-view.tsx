@@ -60,7 +60,7 @@ export function ExamView({
             </Button>
             <div className="hidden items-center gap-2 sm:flex">
               <span className="size-2 rounded-full bg-primary" />
-              <span className="text-sm font-medium">CSA Mock Exam</span>
+              <span className="text-sm font-medium">ServiceNow Exam Trainer</span>
             </div>
           </div>
 

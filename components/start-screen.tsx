@@ -78,15 +78,15 @@ export function StartScreen({ onStart, hasSavedSession, onResume }: StartScreenP
       <header className="mb-10 text-center">
         <span className="inline-flex items-center gap-2 rounded-full border border-border bg-card px-3 py-1 text-xs font-medium uppercase tracking-wider text-muted-foreground">
           <span className="size-1.5 rounded-full bg-primary" />
-          ServiceNow CSA
+          ServiceNow Certifications
         </span>
         <h1 className="mt-5 text-pretty text-4xl font-semibold tracking-tight sm:text-5xl">
           Mock Exam Trainer
         </h1>
         <p className="mx-auto mt-4 max-w-xl text-pretty text-muted-foreground">
-          Practice all {TOTAL_QUESTIONS} Certified System Administrator questions
-          drawn from two mock exams. Answer at your own pace, then review a full
-          breakdown of your results.
+          Practice all {TOTAL_QUESTIONS} questions across CSA, CAD, and CIS-DF
+          sets. Work through single-choice, multiple-answer, and matching questions,
+          then review a scored breakdown of your results.
         </p>
       </header>
 
@@ -109,6 +109,9 @@ export function StartScreen({ onStart, hasSavedSession, onResume }: StartScreenP
           <h2 className="mb-3 flex items-center gap-2 text-sm font-semibold uppercase tracking-wide text-muted-foreground">
             <Layers className="size-4" /> Question sets
           </h2>
+          <p className="mb-3 rounded-xl border border-border bg-secondary/50 p-4 text-sm text-muted-foreground">
+            CIS-DF scoring uses the pink-highlighted answers in the source PDF. The PDF warns that some highlights may be wrong, so cross-check the key. We could recover 187 of 200 numbered items; 13 without usable question or answer data are excluded.
+          </p>
           <div className="grid gap-3 sm:grid-cols-2">
             {SOURCES.map((source) => {
               const count = QUESTIONS.filter((q) => q.source === source).length
@@ -128,7 +131,11 @@ export function StartScreen({ onStart, hasSavedSession, onResume }: StartScreenP
                   <span>
                     <span className="block font-medium">{source}</span>
                     <span className="text-sm text-muted-foreground">
-                      {count} questions
+                      {source === "ServiceNow CAD"
+                        ? `${count} questions across six practice tests`
+                        : source === "CIS-DF"
+                          ? `${count} usable questions · multiple choice + matching`
+                          : `${count} questions`}
                     </span>
                   </span>
                   <span
@@ -168,7 +175,7 @@ export function StartScreen({ onStart, hasSavedSession, onResume }: StartScreenP
             <ToggleRow
               icon={<Shuffle className="size-5" />}
               title="Shuffle answer choices"
-              description="Randomize the order of A, B, C, D options within each question."
+              description="Randomize the available answer options for each question."
               checked={shuffleChoices}
               onChange={setShuffleChoices}
             />

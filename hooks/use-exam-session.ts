@@ -76,7 +76,9 @@ export function useExamSession() {
 
     const choiceOrder: Record<number, string[]> = {}
     for (const q of ordered) {
-      const labels = q.choices.map((c) => c.label)
+      const labels = q.matching
+        ? (q.matchOptions ?? []).map((_, index) => `option-${index}`)
+        : q.choices.map((choice) => choice.label)
       choiceOrder[q.id] = config.shuffleChoices ? shuffle(labels) : labels
     }
 
