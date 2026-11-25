@@ -1,4 +1,6 @@
 import rawQuestions from "./questions.json"
+import cadQuestions from "./cad-questions.json"
+import cisdfQuestions from "./cisdf-questions.json"
 
 export interface Choice {
   label: string
@@ -6,12 +8,20 @@ export interface Choice {
   correct: boolean
 }
 
+export interface MatchingPair {
+  left: string
+  right: string
+}
+
 export interface Question {
   id: number
   source: string
   sourceNumber: number
+  testNumber?: number
   question: string
   choices: Choice[]
+  matching?: MatchingPair[]
+  matchOptions?: string[]
   /** number of correct answers */
   answerCount: number
   /** true when more than one correct answer is expected */
@@ -21,20 +31,33 @@ export interface Question {
 interface RawQuestion {
   source: string
   sourceNumber: number
+  testNumber?: number
   question: string
   choices: Choice[]
+  matching?: MatchingPair[]
 }
 
-export const QUESTIONS: Question[] = (rawQuestions as RawQuestion[]).map((q, i) => {
-  const answerCount = q.choices.filter((c) => c.correct).length
+const questionBank = [
+  ...(rawQuestions as RawQuestion[]),
+  ...(cadQuestions as RawQuestion[]),
+  ...(cisdfQuestions as RawQuestion[]),
+]
+
+export const QUESTIONS: Question[] = questionBank.map((q, i) => {
+  const answerCount = q.matching?.length ?? q.choices.filter((choice) => choice.correct).length
   return {
     id: i,
     source: q.source,
     sourceNumber: q.sourceNumber,
+    testNumber: q.testNumber,
     question: q.question,
     choices: q.choices,
+    matching: q.matching,
+    matchOptions: q.matching
+      ? Array.from(new Set(q.matching.map((pair) => pair.right)))
+      : undefined,
     answerCount,
-    multi: answerCount > 1,
+    multi: q.matching ? true : answerCount > 1,
   }
 })
 
@@ -54,7 +77,20 @@ export function shuffle<T>(input: T[]): T[] {
 
 /** Returns the set of correct choice labels for a question. */
 export function correctLabels(q: Question): string[] {
-  return q.choices.filter((c) => c.correct).map((c) => c.label)
+  if (q.matching) {
+    return q.matching.map((pair, pairIndex) => {
+      const optionIndex = q.matchOptions?.indexOf(pair.right) ?? -1
+      return `pair-${pairIndex}:option-${optionIndex}`
+    })
+  }
+  return q.choices.filter((choice) => choice.correct).map((choice) => choice.label)
+}
+
+export function selectedMatchOption(selected: string[], pairIndex: number): number | null {
+  const answer = selected.find((value) => value.startsWith(`pair-${pairIndex}:`))
+  if (!answer) return null
+  const optionIndex = Number(answer.split(":")[1]?.replace("option-", ""))
+  return Number.isInteger(optionIndex) ? optionIndex : null
 }
 
 /** Determines whether the selected labels exactly match the correct answers. */

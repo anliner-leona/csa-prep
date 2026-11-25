@@ -1,0 +1,1975 @@
+
+
+Unofficial ServiceNow CAD mock exam - original practice questionsPage 1
+ServiceNow CAD
+300-Question Mock Exam
+Six practice tests, 50 questions each, with answer keys and concise explanations
+Blueprint distributionQuestions
+Designing and Creating an Application60
+Application User Interface60
+Security and Restricting Access60
+Application Automation60
+Working with External Data30
+Managing Applications30
+How to use this book
+Take one 50-question test at a time. Select one best answer for each item, then score yourself with the answer key. These are original,
+unofficial practice questions and are not copied from the live certification exam.
+The question mix follows the January 2026 blueprint: Designing and Creating an Application 20%; Application User Interface 20%; Security and
+Restricting Access 20%; Application Automation 20%; Working with External Data 10%; Managing Applications 10%.
+
+Unofficial ServiceNow CAD mock exam - original practice questionsPage 2
+Practice Test 1
+50 questions | Suggested time: 70 minutes | Choose one best answer.
+1. Which option is the BEST practice for reference field?
+A. Use a Reference field to relate a record to one record on another table
+B. Use a Choice field to store a sys_id manually
+C. Use an HTML field to enforce referential integrity
+D. Use a Journal field for relational joins
+2. Which option is the BEST practice for client-callable include?
+A. Mark and design a Script Include appropriately for controlled GlideAjax use
+B. Put server secrets into the client script
+C. Return unrestricted records to any caller
+D. Make every Script Include public without validation
+3. Which option is the BEST practice for field type?
+A. Choose field types based on the data and required behavior, such as Date/Time, Reference, or Choice
+B. Use String for every field regardless of purpose
+C. Use Journal for numeric calculations
+D. Use HTML for all relationships
+4. Which option is the BEST practice for Debug Security Rules?
+A. Use an import set log for client ACLs
+B. Use Debug Security Rules to see which ACLs pass or fail for an access attempt
+C. Use Schema Map to trace ACL execution
+D. Use Form Designer to grant roles
+5. Which option is the BEST practice for business rule?
+A. Use a Client Script for background imports with no browser
+B. Use a Business Rule for server-side logic triggered by database operations
+C. Use a module as a database trigger
+D. Use CSS for data validation on insert
+6. Which option is the BEST practice for dictionary attributes?
+A. Put all field behavior in a module title
+B. Edit the database directly outside ServiceNow
+C. Configure field behavior through the dictionary entry and appropriate attributes
+D. Use only browser CSS to define the data type
+7. Which option is the BEST practice for async rule?
+A. Use an async Business Rule for non-immediate server work that should not delay the user transaction
+B. Use it when the user must see an immediate blocking error
+C. Use it to set mandatory fields in the browser
+D. Use it to control module visibility
+8. Which option is the BEST practice for application property?
+A. Use table labels as passwords
+B. Store configurable application behavior in an application property and retrieve it with the appropriate API
+C. Hard-code environment-specific values throughout scripts
+D. Create a new field for every configuration flag
+
+Unofficial ServiceNow CAD mock exam - original practice questionsPage 3
+9. Which option is the BEST practice for transform map?
+A. Use a Transform Map to define how source fields populate target fields
+B. Use a form section as a field map
+C. Use an ACL to rename CSV headers
+D. Use a Client Script to map spreadsheet columns during a background import
+10. Which option is the BEST practice for table extension?
+A. Duplicate every field into an unrelated table
+B. Use extension only to change a form label
+C. Extend an existing table when the new records need its inherited fields and behavior
+D. Extend a table to bypass all ACL evaluation
+11. Which option is the BEST practice for Flow Designer?
+A. Use Flow Designer for maintainable trigger-and-action automation where supported
+B. Use a schema map to schedule tasks
+C. Use a form layout as a process engine
+D. Use an ACL to send all notifications
+12. Which option is the BEST practice for inbound email action?
+A. Use an ACL to create email records
+B. Use a form layout to receive SMTP
+C. Use an outbound notification to parse incoming mail
+D. Use an Inbound Email Action or email flow to process qualifying incoming messages
+13. Which option is the BEST practice for module visibility?
+A. Use a form section to grant access
+B. Rely on module roles as the only protection for table records
+C. Use list sorting to hide unauthorized data
+D. Assign roles to application menus or modules to limit navigation visibility
+14. Which option is the BEST practice for onChange?
+A. Use an onChange Client Script when logic should run after a field value changes
+B. Use onLoad only after every field change
+C. Use a Business Rule that requires form reload for all UI feedback
+D. Use an inbound email action
+15. Which option is the BEST practice for after rule?
+A. Use a dictionary label to trigger integrations
+B. Use a module to create audit entries
+C. Use an onLoad Client Script for server-side related updates
+D. Use an after Business Rule when related records should be updated after the current record is committed
+16. Which option is the BEST practice for application access?
+A. Configure table Application Access settings to control cross-scope operations
+B. Use auto-numbering to block other scopes
+C. Use a report filter as the security boundary
+D. Use a UI Action label to control cross-scope calls
+
+Unofficial ServiceNow CAD mock exam - original practice questionsPage 4
+17. Which option is the BEST practice for ACL purpose?
+A. Use module order to prevent API access
+B. Use Access Control rules to authorize operations on tables, records, and fields
+C. Use UI Policies as the primary data security layer
+D. Hide a field on one form and assume the data is secure
+18. Which option is the BEST practice for REST Message?
+A. Use a UI Policy to call every external API
+B. Use a schema map as the HTTP client
+C. Create a REST Message with methods, endpoint, authentication, headers, and parameters for outbound REST
+D. Store the endpoint in a form label only
+19. Which option is the BEST practice for before rule?
+A. Use an async rule to block the user immediately
+B. Use a display rule to import CSV data
+C. Use a before Business Rule to change the current record before it is saved
+D. Use an after rule when the value must be written without another update
+20. Which option is the BEST practice for application fit?
+A. A static public brochure with no platform data
+B. A one-time calculation best handled in a spreadsheet
+C. A repeatable business process needing structured records, workflow, security, and reporting
+D. A hardware driver that must run in the operating system
+21. Which option is the BEST practice for branching?
+A. Have every developer overwrite the same branch without coordination
+B. Use branching to bypass code review
+C. Create a branch for each record update automatically
+D. Use branches deliberately and avoid conflicting instance work when collaborating
+22. Which option is the BEST practice for UI policy?
+A. Use an ACL only to change field color
+B. Use a Transform Map for form visibility
+C. Use a REST Message for mandatory fields
+D. Use a UI Policy for condition-based mandatory, visible, or read-only behavior without scripting when possible
+23. Which option is the BEST practice for commit?
+A. Commit coherent application changes with a meaningful message
+B. Commit random partial changes with no context
+C. Include passwords to simplify deployment
+D. Use commits to delete audit history
+24. Which option is the BEST practice for transform scripts?
+A. Put credentials in the source file
+B. Use transform scripts for controlled import logic that cannot be handled by direct field maps
+C. Use client-only g_form methods during a background transform
+D. Disable target validation permanently
+
+Unofficial ServiceNow CAD mock exam - original practice questionsPage 5
+25. Which option is the BEST practice for scheduled execution?
+A. Use a form section as a timer
+B. Use an onChange Client Script when no user is online
+C. Use a UI Policy as a nightly batch
+D. Use Scheduled Script Execution for server-side work that must run at a defined time or interval
+26. Which option is the BEST practice for flow action?
+A. Use reusable actions or subflows for logic shared across automations
+B. Put credentials directly into action labels
+C. Use module titles as reusable code
+D. Copy long logic into every flow
+27. Which option is the BEST practice for ACL evaluation?
+A. ACLs run only for administrators
+B. Form visibility overrides ACLs
+C. A user must satisfy the applicable ACL requirements for the requested operation
+D. Passing one unrelated ACL grants all access
+28. Which option is the BEST practice for table creation?
+A. Use a system property as the primary record store
+B. Create a custom table and define fields that model the business records
+C. Create only a module and avoid a table
+D. Store every value in one long string field
+29. Which option is the BEST practice for application scope?
+A. Scope automatically grants every role access
+B. Scope changes the instance time zone
+C. Use a scoped application to namespace artifacts and control cross-scope access
+D. Use global scope so no protections apply
+30. Which option is the BEST practice for import set?
+A. Use a module as a staging table
+B. Use a UI Policy to parse CSV rows
+C. Import every file directly into arbitrary production columns with no mapping
+D. Load external file data into an import set table before transforming it to a target table
+31. Which option is the BEST practice for source control?
+A. Link a scoped application to a supported Git repository to manage application versions
+B. Commit production credentials with the application
+C. Use Git to store arbitrary instance records automatically
+D. Use source control as a replacement for ACLs
+32. Which option is the BEST practice for Script Include?
+A. Store executable code in a choice label
+B. Use a module as a function library
+C. Put reusable server-side functions in a Script Include
+D. Duplicate the same function in every Business Rule
+
+Unofficial ServiceNow CAD mock exam - original practice questionsPage 6
+33. Which option is the BEST practice for notification event?
+A. Use an ACL to format email
+B. Use a dictionary override to create recipients
+C. Configure a notification to respond to an event when decoupling notification logic is useful
+D. Send mail directly from every client script
+34. Which option is the BEST practice for onSubmit?
+A. Use an onLoad script to cancel every save
+B. Use a module visibility rule
+C. Use an onSubmit Client Script to prevent submission when client-side conditions fail
+D. Use a Scheduled Job to validate before submit
+35. Which option is the BEST practice for flow trigger?
+A. Use an index as an email trigger
+B. Use a field label as the only trigger
+C. Define a trigger that clearly identifies when the flow should start
+D. Start every flow manually from a browser console
+36. Which option is the BEST practice for impersonation testing?
+A. Assume module visibility proves record access
+B. Disable security before each test
+C. Test only while logged in as admin
+D. Impersonate a representative non-admin user to test actual access behavior
+37. Which option is the BEST practice for GlideAjax?
+A. Use GlideAjax to call a client-callable Script Include for server data without reloading the form
+B. Use a UI Policy to query remote tables
+C. Expose administrator credentials in JavaScript
+D. Use synchronous GlideRecord in the browser
+38. Which option is the BEST practice for g_form?
+A. Use GlideRecord directly from ordinary client code
+B. Use g_form in client-side scripts to get or set form values and properties
+C. Use current in a browser Client Script
+D. Use gs in client-only code
+39. Which option is the BEST practice for choice field?
+A. Use an Attachment field for option values
+B. Use a Choice field for a controlled set of stable values
+C. Use free text when consistent reporting is required
+D. Use a Reference field without a related table
+40. Which option is the BEST practice for pull/conflict?
+A. Pull remote changes and resolve source control conflicts carefully before continuing
+B. Ignore conflicts and force overwrite every time
+C. Use a UI Policy to merge Git branches
+D. Resolve conflict by disabling the application
+
+Unofficial ServiceNow CAD mock exam - original practice questionsPage 7
+41. Which option is the BEST practice for event queue?
+A. Use gs.eventQueue() to place an event on the event queue for downstream processing
+B. Use g_form.addInfoMessage() to create a server event
+C. Use the schema map to queue jobs
+D. Use a module to fire notifications
+42. Which option is the BEST practice for client script?
+A. Use a Scheduled Script Execution for immediate form interaction
+B. Use a module to validate typed characters
+C. Use a Client Script for browser-side form behavior such as reacting to field changes
+D. Use an ACL to set a field value onChange
+43. Which option is the BEST practice for least privilege?
+A. Grant only the roles and privileges required for the user or application task
+B. Give admin to avoid troubleshooting authorization
+C. Expose records publicly and filter them in the UI
+D. Put all users in the same elevated group
+44. Which option is the BEST practice for many-to-many?
+A. Create a system property for each relationship
+B. Add hundreds of true/false fields
+C. Use a many-to-many table when records on both sides can relate to multiple records
+D. Put comma-separated sys_ids in a string field
+45. Which option is the BEST practice for role check?
+A. Use g_form.hasRole() in a Business Rule
+B. Compare the user name to a hard-coded password
+C. Use gs.hasRole() in appropriate server-side security logic to test roles
+D. Store roles in a client-visible variable and trust it
+46. Which option is the BEST practice for field ACL?
+A. Use a client script to erase the field visually
+B. Create only a module title condition
+C. Create a field ACL when access to a specific field must be more restrictive than table access
+D. Use a UI Policy as confidential-data protection
+47. Which option is the BEST practice for module purpose?
+A. Use a module instead of an ACL
+B. Create a module to store table data
+C. Use a module as a server-side API
+D. Create an application module to give users navigation to a list, record, or page
+48. Which option is the BEST practice for coalesce?
+A. Mark suitable transform map fields as coalesce to identify matching target records
+B. Coalesce every field so no record can transform
+C. Use coalesce only to change form labels
+D. Use a journal field as a universal key
+
+Unofficial ServiceNow CAD mock exam - original practice questionsPage 8
+49. Which option is the BEST practice for cross-scope privilege?
+A. Move all artifacts to global scope
+B. Allow every application unrestricted access by default
+C. Review and grant only required cross-scope application access privileges
+D. Disable application scope security
+50. Which option is the BEST practice for delegated development?
+A. Use module visibility as developer authorization
+B. Use delegated development permissions to let approved developers work on an application without full admin
+C. Grant admin to every contributor
+D. Use delegated development to expose all global applications
+
+Unofficial ServiceNow CAD mock exam - original practice questionsPage 9
+Practice Test 1 - Answer Key
+1. A - A Reference field stores a link to a record on another table. [Designing and Creating an Application]
+2. A - Client-callable Script Includes should expose only validated, necessary data. [Application Automation]
+3. A - Correct field types improve validation, querying, and user experience. [Designing and Creating an Application]
+4. B - Debug Security Rules shows ACL evaluation details. [Security and Restricting Access]
+5. B - Business Rules run server-side around record operations. [Application User Interface]
+6. C - Dictionary entries define field metadata and platform behavior. [Designing and Creating an Application]
+7. A - Async rules run later and reduce transaction response time. [Application User Interface]
+8. B - Application properties centralize configuration outside code. [Application Automation]
+9. A - Transform Maps control source-to-target field mapping. [Working with External Data]
+10. C - Table extension supports reuse of fields and behavior through inheritance. [Designing and Creating an Application]
+11. A - Flow Designer provides low-code process automation. [Application Automation]
+12. D - Inbound email processing can create or update application records. [Application Automation]
+13. D - Module roles control navigation, while ACLs must still protect the data. [Security and Restricting Access]
+14. A - onChange is designed for field-change behavior on forms. [Application User Interface]
+15. D - After rules are suitable for actions that depend on a completed save. [Application User Interface]
+16. A - Application Access settings define permitted operations from other scopes. [Security and Restricting Access]
+17. B - ACLs enforce server-side access to data and operations. [Security and Restricting Access]
+18. C - REST Messages organize outbound REST integration configuration. [Working with External Data]
+19. C - Before rules efficiently modify the record being saved. [Application User Interface]
+20. C - ServiceNow applications are strongest for structured, repeatable workflows that benefit from platform services. [Designing and
+Creating an Application]
+21. D - A clear branching strategy helps control parallel development. [Managing Applications]
+22. D - UI Policies provide declarative form behavior. [Application User Interface]
+23. A - Focused commits improve traceability and review. [Managing Applications]
+24. B - Transform scripts support server-side import customization. [Working with External Data]
+25. D - Scheduled Script Executions run server code on a schedule. [Application Automation]
+26. A - Reusable actions and subflows improve consistency and maintenance. [Application Automation]
+27. C - ACL evaluation protects access across interfaces, not just forms. [Security and Restricting Access]
+28. B - A table with appropriately typed fields provides a maintainable data model. [Designing and Creating an Application]
+29. C - Application scope isolates and protects application artifacts. [Designing and Creating an Application]
+30. D - Import sets provide a staging area for external data. [Working with External Data]
+31. A - ServiceNow source control integration manages scoped application files and versions. [Managing Applications]
+32. C - Script Includes promote reusable server-side logic. [Application Automation]
+33. C - Event-driven notifications separate business logic from communication. [Application Automation]
+34. C - onSubmit can return false to stop form submission. [Application User Interface]
+35. C - A flow requires a valid trigger such as record creation, update, schedule, or application event. [Application Automation]
+36. D - Impersonation helps validate the effective user experience and permissions. [Security and Restricting Access]
+37. A - GlideAjax provides controlled asynchronous client-to-server calls. [Application User Interface]
+38. B - g_form is the standard client-side form API. [Application User Interface]
+39. B - Choice fields standardize allowed values and improve reporting. [Designing and Creating an Application]
+40. A - Conflict resolution protects the intended application state. [Managing Applications]
+41. A - gs.eventQueue() is used server-side to generate events. [Application Automation]
+
+Unofficial ServiceNow CAD mock exam - original practice questionsPage 10
+42. C - Client Scripts run in the browser and can respond to form events. [Application User Interface]
+43. A - Least privilege reduces unnecessary access and risk. [Security and Restricting Access]
+44. C - A junction table is the normalized design for many-to-many relationships. [Designing and Creating an Application]
+45. C - gs.hasRole() is a server-side role check, though ACL roles should be used directly when possible. [Security and Restricting
+Access]
+46. C - Field ACLs enforce server-side field access. [Security and Restricting Access]
+47. D - Modules are navigation entries within an application menu. [Designing and Creating an Application]
+48. A - Coalesce fields determine whether a transform updates an existing record or inserts a new one. [Working with External Data]
+49. C - Cross-scope privileges control access between scoped applications. [Security and Restricting Access]
+50. B - Delegated development provides controlled development access. [Managing Applications]
+
+Unofficial ServiceNow CAD mock exam - original practice questionsPage 11
+Practice Test 2
+50 questions | Suggested time: 70 minutes | Choose one best answer.
+1. A developer is working on transform map. What should the developer do?
+A. Use an ACL to rename CSV headers
+B. Use a Client Script to map spreadsheet columns during a background import
+C. Use a form section as a field map
+D. Use a Transform Map to define how source fields populate target fields
+2. Which option is the BEST practice for HTTP status?
+A. Ignore 400 and 500 responses
+B. Assume only 200 can ever be successful
+C. Handle expected success and error HTTP status codes explicitly
+D. Parse the response before checking whether the request failed
+3. Which option is the BEST practice for record producer?
+A. Use it only to delete tables
+B. Use it as a database index
+C. Use it to replace all ACLs
+D. Use a Record Producer to let users create records through a catalog-style interface
+4. Which option is the BEST practice for flow testing?
+A. Test a flow with representative input, inspect each step, and confirm resulting records
+B. Publish directly to production without a test
+C. Disable error handling during validation
+D. Judge success only by the flow name
+5. Which option is the BEST practice for client diagnostics?
+A. Use browser developer tools and ServiceNow client-side debugging tools to inspect client errors
+B. Use an email notification to display stack traces
+C. Use an update set preview as the only client debugger
+D. Use database indexes to read JavaScript console errors
+6. A developer is working on table extension. What should the developer do?
+A. Duplicate every field into an unrelated table
+B. Use extension only to change a form label
+C. Extend an existing table when the new records need its inherited fields and behavior
+D. Extend a table to bypass all ACL evaluation
+7. A developer is working on import set. What should the developer do?
+A. Use a module as a staging table
+B. Use a UI Policy to parse CSV rows
+C. Import every file directly into arbitrary production columns with no mapping
+D. Load external file data into an import set table before transforming it to a target table
+8. Which option is the BEST practice for admin override?
+A. Understand the ACL admin override setting and test behavior intentionally
+B. Assume admin override can never be changed
+C. Use admin override to grant anonymous access
+D. The setting controls only form color
+
+Unofficial ServiceNow CAD mock exam - original practice questionsPage 12
+9. Which option is the BEST practice for code review?
+A. Use code review to inspect changes for quality, security, scope, and maintainability
+B. Skip review for server-side security scripts
+C. Review only labels and ignore logic
+D. Approve changes based only on file count
+10. A developer is working on onChange. What should the developer do?
+A. Use an inbound email action
+B. Use an onChange Client Script when logic should run after a field value changes
+C. Use a Business Rule that requires form reload for all UI feedback
+D. Use onLoad only after every field change
+11. Which option is the BEST practice for workflow context?
+A. Disable logging and retry blindly
+B. Use only the browser color theme to debug
+C. Inspect flow execution details or workflow context when diagnosing automation
+D. Delete all execution records before review
+12. A developer is working on table creation. What should the developer do?
+A. Create only a module and avoid a table
+B. Use a system property as the primary record store
+C. Store every value in one long string field
+D. Create a custom table and define fields that model the business records
+13. A developer is working on client script. What should the developer do?
+A. Use a Scheduled Script Execution for immediate form interaction
+B. Use a Client Script for browser-side form behavior such as reacting to field changes
+C. Use a module to validate typed characters
+D. Use an ACL to set a field value onChange
+14. Which option is the BEST practice for application install?
+A. Copy random XML files from unknown sources
+B. Install directly without checking target release
+C. Install applications from the appropriate ServiceNow source and review dependencies and compatibility
+D. Use a client script to install plugins
+15. Which option is the BEST practice for credentials?
+A. Email credentials to every developer
+B. Use ServiceNow credential and connection mechanisms instead of hard-coding secrets in scripts
+C. Put usernames and passwords in client scripts
+D. Store tokens in module names
+16. A developer is working on g_form. What should the developer do?
+A. Use g_form in client-side scripts to get or set form values and properties
+B. Use current in a browser Client Script
+C. Use gs in client-only code
+D. Use GlideRecord directly from ordinary client code
+
+Unofficial ServiceNow CAD mock exam - original practice questionsPage 13
+17. Which option is the BEST practice for email recipients?
+A. Use a table index as an email address
+B. Send all application mail to every user
+C. Hard-code a personal email in every script
+D. Use data-driven recipient fields, groups, or event parameters and validate who should receive the message
+18. A developer is working on onSubmit. What should the developer do?
+A. Use a Scheduled Job to validate before submit
+B. Use an onSubmit Client Script to prevent submission when client-side conditions fail
+C. Use a module visibility rule
+D. Use an onLoad script to cancel every save
+19. Which option is the BEST practice for auto-number?
+A. Use the sys_updated_on value as the display number
+B. Configure an auto-number when each record needs a readable unique identifier
+C. Use the record short description as the guaranteed unique key
+D. Ask users to invent identifiers with no validation
+20. A developer is working on Debug Security Rules. What should the developer do?
+A. Use Schema Map to trace ACL execution
+B. Use Form Designer to grant roles
+C. Use Debug Security Rules to see which ACLs pass or fail for an access attempt
+D. Use an import set log for client ACLs
+21. A developer is working on event queue. What should the developer do?
+A. Use a module to fire notifications
+B. Use gs.eventQueue() to place an event on the event queue for downstream processing
+C. Use the schema map to queue jobs
+D. Use g_form.addInfoMessage() to create a server event
+22. A developer is working on reference field. What should the developer do?
+A. Use an HTML field to enforce referential integrity
+B. Use a Journal field for relational joins
+C. Use a Reference field to relate a record to one record on another table
+D. Use a Choice field to store a sys_id manually
+23. A developer is working on role check. What should the developer do?
+A. Compare the user name to a hard-coded password
+B. Use g_form.hasRole() in a Business Rule
+C. Use gs.hasRole() in appropriate server-side security logic to test roles
+D. Store roles in a client-visible variable and trust it
+24. Which option is the BEST practice for schema map?
+A. Use it to encrypt attachments
+B. Use Schema Map to visualize table relationships and extensions
+C. Use it to impersonate users
+D. Use it to execute production scripts
+
+Unofficial ServiceNow CAD mock exam - original practice questionsPage 14
+25. Which option is the BEST practice for record ownership?
+A. Hide the Assigned to field and allow all reads
+B. Use a choice value as a password
+C. Use an ACL condition or script to compare the record with the current user when ownership matters
+D. Use form color to indicate privacy
+26. Which option is the BEST practice for server script debugging?
+A. Use Script Debugger, logs, and appropriate test records to inspect server-side behavior
+B. Disable all ACLs permanently
+C. Use browser CSS to trace Business Rules
+D. Change production data randomly until it works
+27. Which option is the BEST practice for script ACL?
+A. Use an ACL script when authorization depends on logic not covered by roles or conditions alone
+B. Use a transform map for interactive reads
+C. Use an email template to check access
+D. Use a Client Script because it cannot be bypassed
+28. A developer is working on application property. What should the developer do?
+A. Hard-code environment-specific values throughout scripts
+B. Store configurable application behavior in an application property and retrieve it with the appropriate API
+C. Use table labels as passwords
+D. Create a new field for every configuration flag
+29. A developer is working on impersonation testing. What should the developer do?
+A. Assume module visibility proves record access
+B. Disable security before each test
+C. Impersonate a representative non-admin user to test actual access behavior
+D. Test only while logged in as admin
+30. A developer is working on UI policy. What should the developer do?
+A. Use a Transform Map for form visibility
+B. Use a UI Policy for condition-based mandatory, visible, or read-only behavior without scripting when possible
+C. Use an ACL only to change field color
+D. Use a REST Message for mandatory fields
+31. Which option is the BEST practice for number field?
+A. Use a String field and rely on users to type numbers correctly
+B. Use a Journal field for arithmetic
+C. Use an Integer, Decimal, or Currency field when numeric operations and validation are needed
+D. Use a Reference field with no target table
+32. A developer is working on many-to-many. What should the developer do?
+A. Use a many-to-many table when records on both sides can relate to multiple records
+B. Create a system property for each relationship
+C. Put comma-separated sys_ids in a string field
+D. Add hundreds of true/false fields
+
+Unofficial ServiceNow CAD mock exam - original practice questionsPage 15
+33. Which option is the BEST practice for recursion avoidance?
+A. Convert every rule into a client script
+B. Avoid unnecessary current.update() calls inside Business Rules on the same record
+C. Disable all Business Rules globally
+D. Use repeated updates to guarantee correctness
+34. A developer is working on flow action. What should the developer do?
+A. Put credentials directly into action labels
+B. Use reusable actions or subflows for logic shared across automations
+C. Copy long logic into every flow
+D. Use module titles as reusable code
+35. Which option is the BEST practice for order of operations?
+A. Call current.update() in every Business Rule
+B. Ignore whether logic runs before or after persistence
+C. Consider Business Rule timing and automation interactions to avoid recursion and unintended updates
+D. Place identical logic in multiple engines
+36. Which option is the BEST practice for data model normalization?
+A. Create duplicate tables for each user
+B. Copy the same customer details into every transaction record
+C. Store all records in one unstructured text field
+D. Separate reusable entities into related tables instead of repeating the same attributes
+37. A developer is working on branching. What should the developer do?
+A. Have every developer overwrite the same branch without coordination
+B. Use branching to bypass code review
+C. Create a branch for each record update automatically
+D. Use branches deliberately and avoid conflicting instance work when collaborating
+38. Which option is the BEST practice for deployment validation?
+A. Validate only that the application menu exists
+B. After deployment, run smoke tests for key roles, data access, automations, and integrations
+C. Assume a successful install means all functions work
+D. Test only as admin
+39. Which option is the BEST practice for REST testing?
+A. Test a REST method with safe sample data and inspect status, headers, and response body
+B. Treat any HTTP response as success
+C. Ignore authentication errors and retry endlessly
+D. Test destructive calls first in production
+40. A developer is working on ACL purpose. What should the developer do?
+A. Use module order to prevent API access
+B. Use UI Policies as the primary data security layer
+C. Hide a field on one form and assume the data is secure
+D. Use Access Control rules to authorize operations on tables, records, and fields
+
+Unofficial ServiceNow CAD mock exam - original practice questionsPage 16
+41. A developer is working on flow trigger. What should the developer do?
+A. Use an index as an email trigger
+B. Start every flow manually from a browser console
+C. Use a field label as the only trigger
+D. Define a trigger that clearly identifies when the flow should start
+42. Which option is the BEST practice for secure server API?
+A. Perform sensitive validation and authorization on the server even when client checks exist
+B. Send privileged decisions entirely to the client
+C. Trust hidden client variables for authorization
+D. Rely only on disabled browser buttons
+43. A developer is working on ACL evaluation. What should the developer do?
+A. Passing one unrelated ACL grants all access
+B. A user must satisfy the applicable ACL requirements for the requested operation
+C. Form visibility overrides ACLs
+D. ACLs run only for administrators
+44. Which option is the BEST practice for display rule?
+A. Use an ACL to render HTML
+B. Use a display Business Rule to place server-derived data in g_scratchpad for a form
+C. Use a Scheduled Job to populate browser variables
+D. Use a transform script on every form load
+45. Which option is the BEST practice for protection policy?
+A. Use application artifact protection policies appropriately when distributing scoped applications
+B. Use them to replace user ACLs
+C. Use them to set list pagination
+D. Use them to encrypt all network traffic
+46. A developer is working on Flow Designer. What should the developer do?
+A. Use Flow Designer for maintainable trigger-and-action automation where supported
+B. Use an ACL to send all notifications
+C. Use a form layout as a process engine
+D. Use a schema map to schedule tasks
+47. A developer is working on application fit. What should the developer do?
+A. A static public brochure with no platform data
+B. A repeatable business process needing structured records, workflow, security, and reporting
+C. A one-time calculation best handled in a spreadsheet
+D. A hardware driver that must run in the operating system
+48. Which option is the BEST practice for form layout?
+A. Use an import set to reorder a form
+B. Use Form Designer or form configuration to organize fields, sections, and related lists
+C. Use a REST Message to add sections
+D. Modify the database schema by dragging browser pixels
+
+Unofficial ServiceNow CAD mock exam - original practice questionsPage 17
+49. A developer is working on source control. What should the developer do?
+A. Link a scoped application to a supported Git repository to manage application versions
+B. Use source control as a replacement for ACLs
+C. Commit production credentials with the application
+D. Use Git to store arbitrary instance records automatically
+50. Which option is the BEST practice for display value?
+A. Make every field the display field
+B. Expose only sys_id values to end users
+C. Set an appropriate display field so references show a meaningful value
+D. Remove all labels from reference fields
+
+Unofficial ServiceNow CAD mock exam - original practice questionsPage 18
+Practice Test 2 - Answer Key
+1. D - Transform Maps control source-to-target field mapping. [Working with External Data]
+2. C - Robust integrations evaluate status codes and error responses. [Working with External Data]
+3. D - Record Producers provide a simplified request interface that creates records. [Application User Interface]
+4. A - Controlled flow tests reveal input, action, and permission problems. [Application Automation]
+5. A - Browser and platform diagnostics help identify client-side script issues. [Application User Interface]
+6. C - Table extension supports reuse of fields and behavior through inheritance. [Designing and Creating an Application]
+7. D - Import sets provide a staging area for external data. [Working with External Data]
+8. A - The admin override option affects whether admin users automatically pass that ACL. [Security and Restricting Access]
+9. A - Code review reduces defects and security issues before promotion. [Managing Applications]
+10. B - onChange is designed for field-change behavior on forms. [Application User Interface]
+11. C - Execution details show inputs, steps, and errors for troubleshooting. [Application Automation]
+12. D - A table with appropriately typed fields provides a maintainable data model. [Designing and Creating an Application]
+13. B - Client Scripts run in the browser and can respond to form events. [Application User Interface]
+14. C - Managed installation requires trusted sources and compatibility checks. [Managing Applications]
+15. B - Managed credentials reduce exposure and improve maintainability. [Working with External Data]
+16. A - g_form is the standard client-side form API. [Application User Interface]
+17. D - Data-driven recipient configuration is safer and easier to maintain. [Application Automation]
+18. B - onSubmit can return false to stop form submission. [Application User Interface]
+19. B - Auto-numbering provides consistent human-readable identifiers. [Designing and Creating an Application]
+20. C - Debug Security Rules shows ACL evaluation details. [Security and Restricting Access]
+21. B - gs.eventQueue() is used server-side to generate events. [Application Automation]
+22. C - A Reference field stores a link to a record on another table. [Designing and Creating an Application]
+23. C - gs.hasRole() is a server-side role check, though ACL roles should be used directly when possible. [Security and Restricting
+Access]
+24. B - Schema Map helps developers inspect a data model visually. [Designing and Creating an Application]
+25. C - Record-aware ACL logic can enforce owner-based access. [Security and Restricting Access]
+26. A - ServiceNow provides server-side debugging and logging tools for controlled troubleshooting. [Application User Interface]
+27. A - ACL scripts support contextual server-side authorization. [Security and Restricting Access]
+28. B - Application properties centralize configuration outside code. [Application Automation]
+29. C - Impersonation helps validate the effective user experience and permissions. [Security and Restricting Access]
+30. B - UI Policies provide declarative form behavior. [Application User Interface]
+31. C - Numeric field types support proper sorting, validation, and calculation. [Designing and Creating an Application]
+32. A - A junction table is the normalized design for many-to-many relationships. [Designing and Creating an Application]
+33. B - Updating the same record from its Business Rule can cause recursion or extra processing. [Application Automation]
+34. B - Reusable actions and subflows improve consistency and maintenance. [Application Automation]
+35. C - Understanding execution timing prevents loops and inconsistent outcomes. [Application Automation]
+36. D - A normalized model reduces duplication and improves consistency. [Designing and Creating an Application]
+37. D - A clear branching strategy helps control parallel development. [Managing Applications]
+38. B - Post-deployment validation should cover major functional and security paths. [Managing Applications]
+39. A - Integration testing should verify HTTP status and response content. [Working with External Data]
+40. D - ACLs enforce server-side access to data and operations. [Security and Restricting Access]
+41. D - A flow requires a valid trigger such as record creation, update, schedule, or application event. [Application Automation]
+
+Unofficial ServiceNow CAD mock exam - original practice questionsPage 19
+42. A - Client controls improve UX but do not replace server-side security. [Security and Restricting Access]
+43. B - ACL evaluation protects access across interfaces, not just forms. [Security and Restricting Access]
+44. B - Display rules can prepare server data before a form is shown. [Application User Interface]
+45. A - Protection policies help protect application intellectual property and artifacts. [Security and Restricting Access]
+46. A - Flow Designer provides low-code process automation. [Application Automation]
+47. B - ServiceNow applications are strongest for structured, repeatable workflows that benefit from platform services. [Designing and
+Creating an Application]
+48. B - Form configuration tools control the record form layout. [Application User Interface]
+49. A - ServiceNow source control integration manages scoped application files and versions. [Managing Applications]
+50. C - A meaningful display value makes referenced records understandable. [Designing and Creating an Application]
+
+Unofficial ServiceNow CAD mock exam - original practice questionsPage 20
+Practice Test 3
+50 questions | Suggested time: 70 minutes | Choose one best answer.
+1. A developer is working on auto-number. What should the developer do?
+A. Use the record short description as the guaranteed unique key
+B. Use the sys_updated_on value as the display number
+C. Ask users to invent identifiers with no validation
+D. Configure an auto-number when each record needs a readable unique identifier
+2. A developer is working on application access. What should the developer do?
+A. Use a report filter as the security boundary
+B. Configure table Application Access settings to control cross-scope operations
+C. Use auto-numbering to block other scopes
+D. Use a UI Action label to control cross-scope calls
+3. A developer is working on REST Message. What should the developer do?
+A. Store the endpoint in a form label only
+B. Use a schema map as the HTTP client
+C. Create a REST Message with methods, endpoint, authentication, headers, and parameters for outbound REST
+D. Use a UI Policy to call every external API
+4. A developer is working on workflow context. What should the developer do?
+A. Use only the browser color theme to debug
+B. Disable logging and retry blindly
+C. Delete all execution records before review
+D. Inspect flow execution details or workflow context when diagnosing automation
+5. A developer is working on client diagnostics. What should the developer do?
+A. Use an update set preview as the only client debugger
+B. Use browser developer tools and ServiceNow client-side debugging tools to inspect client errors
+C. Use an email notification to display stack traces
+D. Use database indexes to read JavaScript console errors
+6. A developer is working on scheduled execution. What should the developer do?
+A. Use Scheduled Script Execution for server-side work that must run at a defined time or interval
+B. Use an onChange Client Script when no user is online
+C. Use a form section as a timer
+D. Use a UI Policy as a nightly batch
+7. A developer is working on script ACL. What should the developer do?
+A. Use an ACL script when authorization depends on logic not covered by roles or conditions alone
+B. Use a transform map for interactive reads
+C. Use an email template to check access
+D. Use a Client Script because it cannot be bypassed
+8. A developer is working on GlideAjax. What should the developer do?
+A. Use GlideAjax to call a client-callable Script Include for server data without reloading the form
+B. Use a UI Policy to query remote tables
+C. Use synchronous GlideRecord in the browser
+D. Expose administrator credentials in JavaScript
+
+Unofficial ServiceNow CAD mock exam - original practice questionsPage 21
+9. A developer is working on inbound email action. What should the developer do?
+A. Use an outbound notification to parse incoming mail
+B. Use an Inbound Email Action or email flow to process qualifying incoming messages
+C. Use a form layout to receive SMTP
+D. Use an ACL to create email records
+10. A developer is working on secure server API. What should the developer do?
+A. Send privileged decisions entirely to the client
+B. Perform sensitive validation and authorization on the server even when client checks exist
+C. Trust hidden client variables for authorization
+D. Rely only on disabled browser buttons
+11. A developer is working on data model normalization. What should the developer do?
+A. Store all records in one unstructured text field
+B. Create duplicate tables for each user
+C. Copy the same customer details into every transaction record
+D. Separate reusable entities into related tables instead of repeating the same attributes
+12. A developer is working on after rule. What should the developer do?
+A. Use a dictionary label to trigger integrations
+B. Use a module to create audit entries
+C. Use an after Business Rule when related records should be updated after the current record is committed
+D. Use an onLoad Client Script for server-side related updates
+13. A developer is working on module purpose. What should the developer do?
+A. Use a module as a server-side API
+B. Use a module instead of an ACL
+C. Create a module to store table data
+D. Create an application module to give users navigation to a list, record, or page
+14. A developer is working on before rule. What should the developer do?
+A. Use an async rule to block the user immediately
+B. Use an after rule when the value must be written without another update
+C. Use a before Business Rule to change the current record before it is saved
+D. Use a display rule to import CSV data
+15. A developer is working on business rule. What should the developer do?
+A. Use a module as a database trigger
+B. Use CSS for data validation on insert
+C. Use a Client Script for background imports with no browser
+D. Use a Business Rule for server-side logic triggered by database operations
+16. A developer is working on cross-scope privilege. What should the developer do?
+A. Disable application scope security
+B. Allow every application unrestricted access by default
+C. Move all artifacts to global scope
+D. Review and grant only required cross-scope application access privileges
+
+Unofficial ServiceNow CAD mock exam - original practice questionsPage 22
+17. A developer is working on flow testing. What should the developer do?
+A. Disable error handling during validation
+B. Test a flow with representative input, inspect each step, and confirm resulting records
+C. Judge success only by the flow name
+D. Publish directly to production without a test
+18. A developer is working on record producer. What should the developer do?
+A. Use a Record Producer to let users create records through a catalog-style interface
+B. Use it as a database index
+C. Use it only to delete tables
+D. Use it to replace all ACLs
+19. A developer is working on order of operations. What should the developer do?
+A. Call current.update() in every Business Rule
+B. Consider Business Rule timing and automation interactions to avoid recursion and unintended updates
+C. Place identical logic in multiple engines
+D. Ignore whether logic runs before or after persistence
+20. A developer is working on transform scripts. What should the developer do?
+A. Disable target validation permanently
+B. Put credentials in the source file
+C. Use transform scripts for controlled import logic that cannot be handled by direct field maps
+D. Use client-only g_form methods during a background transform
+21. A developer is working on field ACL. What should the developer do?
+A. Create a field ACL when access to a specific field must be more restrictive than table access
+B. Use a UI Policy as confidential-data protection
+C. Use a client script to erase the field visually
+D. Create only a module title condition
+22. A developer is working on application install. What should the developer do?
+A. Copy random XML files from unknown sources
+B. Install directly without checking target release
+C. Use a client script to install plugins
+D. Install applications from the appropriate ServiceNow source and review dependencies and compatibility
+23. A developer is working on commit. What should the developer do?
+A. Commit random partial changes with no context
+B. Use commits to delete audit history
+C. Commit coherent application changes with a meaningful message
+D. Include passwords to simplify deployment
+24. A developer is working on code review. What should the developer do?
+A. Use code review to inspect changes for quality, security, scope, and maintainability
+B. Review only labels and ignore logic
+C. Approve changes based only on file count
+D. Skip review for server-side security scripts
+
+Unofficial ServiceNow CAD mock exam - original practice questionsPage 23
+25. A developer is working on protection policy. What should the developer do?
+A. Use them to encrypt all network traffic
+B. Use application artifact protection policies appropriately when distributing scoped applications
+C. Use them to replace user ACLs
+D. Use them to set list pagination
+26. A developer is working on least privilege. What should the developer do?
+A. Grant only the roles and privileges required for the user or application task
+B. Expose records publicly and filter them in the UI
+C. Give admin to avoid troubleshooting authorization
+D. Put all users in the same elevated group
+27. A developer is working on dictionary attributes. What should the developer do?
+A. Configure field behavior through the dictionary entry and appropriate attributes
+B. Use only browser CSS to define the data type
+C. Put all field behavior in a module title
+D. Edit the database directly outside ServiceNow
+28. A developer is working on module visibility. What should the developer do?
+A. Use a form section to grant access
+B. Use list sorting to hide unauthorized data
+C. Rely on module roles as the only protection for table records
+D. Assign roles to application menus or modules to limit navigation visibility
+29. A developer is working on REST testing. What should the developer do?
+A. Test a REST method with safe sample data and inspect status, headers, and response body
+B. Test destructive calls first in production
+C. Ignore authentication errors and retry endlessly
+D. Treat any HTTP response as success
+30. A developer is working on server script debugging. What should the developer do?
+A. Use Script Debugger, logs, and appropriate test records to inspect server-side behavior
+B. Disable all ACLs permanently
+C. Use browser CSS to trace Business Rules
+D. Change production data randomly until it works
+31. A developer is working on application scope. What should the developer do?
+A. Use global scope so no protections apply
+B. Use a scoped application to namespace artifacts and control cross-scope access
+C. Scope changes the instance time zone
+D. Scope automatically grants every role access
+32. A developer is working on delegated development. What should the developer do?
+A. Use module visibility as developer authorization
+B. Grant admin to every contributor
+C. Use delegated development to expose all global applications
+D. Use delegated development permissions to let approved developers work on an application without full admin
+
+Unofficial ServiceNow CAD mock exam - original practice questionsPage 24
+33. A developer is working on field type. What should the developer do?
+A. Choose field types based on the data and required behavior, such as Date/Time, Reference, or Choice
+B. Use HTML for all relationships
+C. Use String for every field regardless of purpose
+D. Use Journal for numeric calculations
+34. A developer is working on pull/conflict. What should the developer do?
+A. Resolve conflict by disabling the application
+B. Ignore conflicts and force overwrite every time
+C. Pull remote changes and resolve source control conflicts carefully before continuing
+D. Use a UI Policy to merge Git branches
+35. A developer is working on display rule. What should the developer do?
+A. Use a Scheduled Job to populate browser variables
+B. Use a transform script on every form load
+C. Use an ACL to render HTML
+D. Use a display Business Rule to place server-derived data in g_scratchpad for a form
+36. A developer is working on choice field. What should the developer do?
+A. Use an Attachment field for option values
+B. Use a Reference field without a related table
+C. Use a Choice field for a controlled set of stable values
+D. Use free text when consistent reporting is required
+37. A developer is working on Script Include. What should the developer do?
+A. Duplicate the same function in every Business Rule
+B. Put reusable server-side functions in a Script Include
+C. Store executable code in a choice label
+D. Use a module as a function library
+38. A developer is working on admin override. What should the developer do?
+A. Use admin override to grant anonymous access
+B. The setting controls only form color
+C. Understand the ACL admin override setting and test behavior intentionally
+D. Assume admin override can never be changed
+39. A developer is working on number field. What should the developer do?
+A. Use a String field and rely on users to type numbers correctly
+B. Use an Integer, Decimal, or Currency field when numeric operations and validation are needed
+C. Use a Reference field with no target table
+D. Use a Journal field for arithmetic
+40. A developer is working on recursion avoidance. What should the developer do?
+A. Disable all Business Rules globally
+B. Convert every rule into a client script
+C. Use repeated updates to guarantee correctness
+D. Avoid unnecessary current.update() calls inside Business Rules on the same record
+
+Unofficial ServiceNow CAD mock exam - original practice questionsPage 25
+41. A developer is working on coalesce. What should the developer do?
+A. Coalesce every field so no record can transform
+B. Use coalesce only to change form labels
+C. Mark suitable transform map fields as coalesce to identify matching target records
+D. Use a journal field as a universal key
+42. A developer is working on credentials. What should the developer do?
+A. Store tokens in module names
+B. Use ServiceNow credential and connection mechanisms instead of hard-coding secrets in scripts
+C. Put usernames and passwords in client scripts
+D. Email credentials to every developer
+43. A developer is working on notification event. What should the developer do?
+A. Configure a notification to respond to an event when decoupling notification logic is useful
+B. Send mail directly from every client script
+C. Use a dictionary override to create recipients
+D. Use an ACL to format email
+44. A developer is working on form layout. What should the developer do?
+A. Modify the database schema by dragging browser pixels
+B. Use Form Designer or form configuration to organize fields, sections, and related lists
+C. Use an import set to reorder a form
+D. Use a REST Message to add sections
+45. A developer is working on display value. What should the developer do?
+A. Remove all labels from reference fields
+B. Set an appropriate display field so references show a meaningful value
+C. Expose only sys_id values to end users
+D. Make every field the display field
+46. A developer is working on schema map. What should the developer do?
+A. Use Schema Map to visualize table relationships and extensions
+B. Use it to execute production scripts
+C. Use it to impersonate users
+D. Use it to encrypt attachments
+47. A developer is working on async rule. What should the developer do?
+A. Use an async Business Rule for non-immediate server work that should not delay the user transaction
+B. Use it when the user must see an immediate blocking error
+C. Use it to set mandatory fields in the browser
+D. Use it to control module visibility
+48. A developer is working on record ownership. What should the developer do?
+A. Use a choice value as a password
+B. Use an ACL condition or script to compare the record with the current user when ownership matters
+C. Use form color to indicate privacy
+D. Hide the Assigned to field and allow all reads
+
+Unofficial ServiceNow CAD mock exam - original practice questionsPage 26
+49. A developer is working on email recipients. What should the developer do?
+A. Use a table index as an email address
+B. Use data-driven recipient fields, groups, or event parameters and validate who should receive the message
+C. Send all application mail to every user
+D. Hard-code a personal email in every script
+50. A developer is working on client-callable include. What should the developer do?
+A. Put server secrets into the client script
+B. Return unrestricted records to any caller
+C. Mark and design a Script Include appropriately for controlled GlideAjax use
+D. Make every Script Include public without validation
+
+Unofficial ServiceNow CAD mock exam - original practice questionsPage 27
+Practice Test 3 - Answer Key
+1. D - Auto-numbering provides consistent human-readable identifiers. [Designing and Creating an Application]
+2. B - Application Access settings define permitted operations from other scopes. [Security and Restricting Access]
+3. C - REST Messages organize outbound REST integration configuration. [Working with External Data]
+4. D - Execution details show inputs, steps, and errors for troubleshooting. [Application Automation]
+5. B - Browser and platform diagnostics help identify client-side script issues. [Application User Interface]
+6. A - Scheduled Script Executions run server code on a schedule. [Application Automation]
+7. A - ACL scripts support contextual server-side authorization. [Security and Restricting Access]
+8. A - GlideAjax provides controlled asynchronous client-to-server calls. [Application User Interface]
+9. B - Inbound email processing can create or update application records. [Application Automation]
+10. B - Client controls improve UX but do not replace server-side security. [Security and Restricting Access]
+11. D - A normalized model reduces duplication and improves consistency. [Designing and Creating an Application]
+12. C - After rules are suitable for actions that depend on a completed save. [Application User Interface]
+13. D - Modules are navigation entries within an application menu. [Designing and Creating an Application]
+14. C - Before rules efficiently modify the record being saved. [Application User Interface]
+15. D - Business Rules run server-side around record operations. [Application User Interface]
+16. D - Cross-scope privileges control access between scoped applications. [Security and Restricting Access]
+17. B - Controlled flow tests reveal input, action, and permission problems. [Application Automation]
+18. A - Record Producers provide a simplified request interface that creates records. [Application User Interface]
+19. B - Understanding execution timing prevents loops and inconsistent outcomes. [Application Automation]
+20. C - Transform scripts support server-side import customization. [Working with External Data]
+21. A - Field ACLs enforce server-side field access. [Security and Restricting Access]
+22. D - Managed installation requires trusted sources and compatibility checks. [Managing Applications]
+23. C - Focused commits improve traceability and review. [Managing Applications]
+24. A - Code review reduces defects and security issues before promotion. [Managing Applications]
+25. B - Protection policies help protect application intellectual property and artifacts. [Security and Restricting Access]
+26. A - Least privilege reduces unnecessary access and risk. [Security and Restricting Access]
+27. A - Dictionary entries define field metadata and platform behavior. [Designing and Creating an Application]
+28. D - Module roles control navigation, while ACLs must still protect the data. [Security and Restricting Access]
+29. A - Integration testing should verify HTTP status and response content. [Working with External Data]
+30. A - ServiceNow provides server-side debugging and logging tools for controlled troubleshooting. [Application User Interface]
+31. B - Application scope isolates and protects application artifacts. [Designing and Creating an Application]
+32. D - Delegated development provides controlled development access. [Managing Applications]
+33. A - Correct field types improve validation, querying, and user experience. [Designing and Creating an Application]
+34. C - Conflict resolution protects the intended application state. [Managing Applications]
+35. D - Display rules can prepare server data before a form is shown. [Application User Interface]
+36. C - Choice fields standardize allowed values and improve reporting. [Designing and Creating an Application]
+37. B - Script Includes promote reusable server-side logic. [Application Automation]
+38. C - The admin override option affects whether admin users automatically pass that ACL. [Security and Restricting Access]
+39. B - Numeric field types support proper sorting, validation, and calculation. [Designing and Creating an Application]
+40. D - Updating the same record from its Business Rule can cause recursion or extra processing. [Application Automation]
+41. C - Coalesce fields determine whether a transform updates an existing record or inserts a new one. [Working with External Data]
+42. B - Managed credentials reduce exposure and improve maintainability. [Working with External Data]
+
+Unofficial ServiceNow CAD mock exam - original practice questionsPage 28
+43. A - Event-driven notifications separate business logic from communication. [Application Automation]
+44. B - Form configuration tools control the record form layout. [Application User Interface]
+45. B - A meaningful display value makes referenced records understandable. [Designing and Creating an Application]
+46. A - Schema Map helps developers inspect a data model visually. [Designing and Creating an Application]
+47. A - Async rules run later and reduce transaction response time. [Application User Interface]
+48. B - Record-aware ACL logic can enforce owner-based access. [Security and Restricting Access]
+49. B - Data-driven recipient configuration is safer and easier to maintain. [Application Automation]
+50. C - Client-callable Script Includes should expose only validated, necessary data. [Application Automation]
+
+Unofficial ServiceNow CAD mock exam - original practice questionsPage 29
+Practice Test 4
+50 questions | Suggested time: 70 minutes | Choose one best answer.
+1. Which statement about transform map is correct?
+A. Use a Transform Map to define how source fields populate target fields
+B. Use a form section as a field map
+C. Use an ACL to rename CSV headers
+D. Use a Client Script to map spreadsheet columns during a background import
+2. Which statement about onSubmit is correct?
+A. Use an onLoad script to cancel every save
+B. Use a module visibility rule
+C. Use an onSubmit Client Script to prevent submission when client-side conditions fail
+D. Use a Scheduled Job to validate before submit
+3. Which statement about client-callable include is correct?
+A. Mark and design a Script Include appropriately for controlled GlideAjax use
+B. Return unrestricted records to any caller
+C. Make every Script Include public without validation
+D. Put server secrets into the client script
+4. Which statement about async rule is correct?
+A. Use an async Business Rule for non-immediate server work that should not delay the user transaction
+B. Use it to set mandatory fields in the browser
+C. Use it to control module visibility
+D. Use it when the user must see an immediate blocking error
+5. Which statement about Script Include is correct?
+A. Store executable code in a choice label
+B. Put reusable server-side functions in a Script Include
+C. Use a module as a function library
+D. Duplicate the same function in every Business Rule
+6. Which statement about dictionary attributes is correct?
+A. Put all field behavior in a module title
+B. Edit the database directly outside ServiceNow
+C. Use only browser CSS to define the data type
+D. Configure field behavior through the dictionary entry and appropriate attributes
+7. Which statement about source control is correct?
+A. Use Git to store arbitrary instance records automatically
+B. Link a scoped application to a supported Git repository to manage application versions
+C. Use source control as a replacement for ACLs
+D. Commit production credentials with the application
+8. Which statement about onChange is correct?
+A. Use an onChange Client Script when logic should run after a field value changes
+B. Use an inbound email action
+C. Use a Business Rule that requires form reload for all UI feedback
+D. Use onLoad only after every field change
+
+Unofficial ServiceNow CAD mock exam - original practice questionsPage 30
+9. Which statement about UI policy is correct?
+A. Use a REST Message for mandatory fields
+B. Use an ACL only to change field color
+C. Use a Transform Map for form visibility
+D. Use a UI Policy for condition-based mandatory, visible, or read-only behavior without scripting when possible
+10. Which statement about reference field is correct?
+A. Use a Reference field to relate a record to one record on another table
+B. Use an HTML field to enforce referential integrity
+C. Use a Journal field for relational joins
+D. Use a Choice field to store a sys_id manually
+11. Which statement about choice field is correct?
+A. Use a Choice field for a controlled set of stable values
+B. Use a Reference field without a related table
+C. Use free text when consistent reporting is required
+D. Use an Attachment field for option values
+12. Which statement about GlideAjax is correct?
+A. Use a UI Policy to query remote tables
+B. Use GlideAjax to call a client-callable Script Include for server data without reloading the form
+C. Use synchronous GlideRecord in the browser
+D. Expose administrator credentials in JavaScript
+13. Which statement about application property is correct?
+A. Create a new field for every configuration flag
+B. Store configurable application behavior in an application property and retrieve it with the appropriate API
+C. Use table labels as passwords
+D. Hard-code environment-specific values throughout scripts
+14. Which statement about module purpose is correct?
+A. Use a module instead of an ACL
+B. Create an application module to give users navigation to a list, record, or page
+C. Use a module as a server-side API
+D. Create a module to store table data
+15. Which statement about table extension is correct?
+A. Extend an existing table when the new records need its inherited fields and behavior
+B. Use extension only to change a form label
+C. Duplicate every field into an unrelated table
+D. Extend a table to bypass all ACL evaluation
+16. Which statement about application fit is correct?
+A. A static public brochure with no platform data
+B. A one-time calculation best handled in a spreadsheet
+C. A repeatable business process needing structured records, workflow, security, and reporting
+D. A hardware driver that must run in the operating system
+
+Unofficial ServiceNow CAD mock exam - original practice questionsPage 31
+17. Which statement about import set is correct?
+A. Load external file data into an import set table before transforming it to a target table
+B. Use a UI Policy to parse CSV rows
+C. Import every file directly into arbitrary production columns with no mapping
+D. Use a module as a staging table
+18. Which statement about client script is correct?
+A. Use an ACL to set a field value onChange
+B. Use a Client Script for browser-side form behavior such as reacting to field changes
+C. Use a Scheduled Script Execution for immediate form interaction
+D. Use a module to validate typed characters
+19. Which statement about Debug Security Rules is correct?
+A. Use Debug Security Rules to see which ACLs pass or fail for an access attempt
+B. Use Schema Map to trace ACL execution
+C. Use Form Designer to grant roles
+D. Use an import set log for client ACLs
+20. Which statement about branching is correct?
+A. Use branches deliberately and avoid conflicting instance work when collaborating
+B. Have every developer overwrite the same branch without coordination
+C. Use branching to bypass code review
+D. Create a branch for each record update automatically
+21. Which statement about before rule is correct?
+A. Use an after rule when the value must be written without another update
+B. Use an async rule to block the user immediately
+C. Use a before Business Rule to change the current record before it is saved
+D. Use a display rule to import CSV data
+22. Which statement about module visibility is correct?
+A. Rely on module roles as the only protection for table records
+B. Use list sorting to hide unauthorized data
+C. Assign roles to application menus or modules to limit navigation visibility
+D. Use a form section to grant access
+23. Which statement about field type is correct?
+A. Choose field types based on the data and required behavior, such as Date/Time, Reference, or Choice
+B. Use Journal for numeric calculations
+C. Use String for every field regardless of purpose
+D. Use HTML for all relationships
+24. Which statement about ACL purpose is correct?
+A. Use module order to prevent API access
+B. Hide a field on one form and assume the data is secure
+C. Use UI Policies as the primary data security layer
+D. Use Access Control rules to authorize operations on tables, records, and fields
+
+Unofficial ServiceNow CAD mock exam - original practice questionsPage 32
+25. A developer is working on HTTP status. What should the developer do?
+A. Handle expected success and error HTTP status codes explicitly
+B. Assume only 200 can ever be successful
+C. Ignore 400 and 500 responses
+D. Parse the response before checking whether the request failed
+26. Which statement about cross-scope privilege is correct?
+A. Move all artifacts to global scope
+B. Disable application scope security
+C. Review and grant only required cross-scope application access privileges
+D. Allow every application unrestricted access by default
+27. Which statement about pull/conflict is correct?
+A. Use a UI Policy to merge Git branches
+B. Pull remote changes and resolve source control conflicts carefully before continuing
+C. Ignore conflicts and force overwrite every time
+D. Resolve conflict by disabling the application
+28. Which statement about role check is correct?
+A. Use g_form.hasRole() in a Business Rule
+B. Store roles in a client-visible variable and trust it
+C. Use gs.hasRole() in appropriate server-side security logic to test roles
+D. Compare the user name to a hard-coded password
+29. Which statement about business rule is correct?
+A. Use a Client Script for background imports with no browser
+B. Use CSS for data validation on insert
+C. Use a module as a database trigger
+D. Use a Business Rule for server-side logic triggered by database operations
+30. Which statement about commit is correct?
+A. Commit coherent application changes with a meaningful message
+B. Include passwords to simplify deployment
+C. Commit random partial changes with no context
+D. Use commits to delete audit history
+31. Which statement about coalesce is correct?
+A. Mark suitable transform map fields as coalesce to identify matching target records
+B. Use coalesce only to change form labels
+C. Use a journal field as a universal key
+D. Coalesce every field so no record can transform
+32. Which statement about inbound email action is correct?
+A. Use an ACL to create email records
+B. Use a form layout to receive SMTP
+C. Use an outbound notification to parse incoming mail
+D. Use an Inbound Email Action or email flow to process qualifying incoming messages
+
+Unofficial ServiceNow CAD mock exam - original practice questionsPage 33
+33. Which statement about after rule is correct?
+A. Use an onLoad Client Script for server-side related updates
+B. Use an after Business Rule when related records should be updated after the current record is committed
+C. Use a module to create audit entries
+D. Use a dictionary label to trigger integrations
+34. Which statement about application scope is correct?
+A. Scope automatically grants every role access
+B. Scope changes the instance time zone
+C. Use global scope so no protections apply
+D. Use a scoped application to namespace artifacts and control cross-scope access
+35. Which statement about scheduled execution is correct?
+A. Use an onChange Client Script when no user is online
+B. Use a form section as a timer
+C. Use a UI Policy as a nightly batch
+D. Use Scheduled Script Execution for server-side work that must run at a defined time or interval
+36. Which statement about transform scripts is correct?
+A. Disable target validation permanently
+B. Put credentials in the source file
+C. Use transform scripts for controlled import logic that cannot be handled by direct field maps
+D. Use client-only g_form methods during a background transform
+37. Which statement about flow action is correct?
+A. Use module titles as reusable code
+B. Copy long logic into every flow
+C. Put credentials directly into action labels
+D. Use reusable actions or subflows for logic shared across automations
+38. Which statement about Flow Designer is correct?
+A. Use Flow Designer for maintainable trigger-and-action automation where supported
+B. Use a form layout as a process engine
+C. Use a schema map to schedule tasks
+D. Use an ACL to send all notifications
+39. Which statement about many-to-many is correct?
+A. Put comma-separated sys_ids in a string field
+B. Use a many-to-many table when records on both sides can relate to multiple records
+C. Add hundreds of true/false fields
+D. Create a system property for each relationship
+40. Which statement about ACL evaluation is correct?
+A. Passing one unrelated ACL grants all access
+B. A user must satisfy the applicable ACL requirements for the requested operation
+C. Form visibility overrides ACLs
+D. ACLs run only for administrators
+
+Unofficial ServiceNow CAD mock exam - original practice questionsPage 34
+41. Which statement about table creation is correct?
+A. Store every value in one long string field
+B. Create only a module and avoid a table
+C. Use a system property as the primary record store
+D. Create a custom table and define fields that model the business records
+42. Which statement about field ACL is correct?
+A. Create only a module title condition
+B. Use a client script to erase the field visually
+C. Create a field ACL when access to a specific field must be more restrictive than table access
+D. Use a UI Policy as confidential-data protection
+43. A developer is working on deployment validation. What should the developer do?
+A. After deployment, run smoke tests for key roles, data access, automations, and integrations
+B. Validate only that the application menu exists
+C. Test only as admin
+D. Assume a successful install means all functions work
+44. Which statement about event queue is correct?
+A. Use a module to fire notifications
+B. Use the schema map to queue jobs
+C. Use gs.eventQueue() to place an event on the event queue for downstream processing
+D. Use g_form.addInfoMessage() to create a server event
+45. Which statement about application access is correct?
+A. Use a report filter as the security boundary
+B. Configure table Application Access settings to control cross-scope operations
+C. Use a UI Action label to control cross-scope calls
+D. Use auto-numbering to block other scopes
+46. Which statement about least privilege is correct?
+A. Give admin to avoid troubleshooting authorization
+B. Grant only the roles and privileges required for the user or application task
+C. Expose records publicly and filter them in the UI
+D. Put all users in the same elevated group
+47. Which statement about g_form is correct?
+A. Use current in a browser Client Script
+B. Use gs in client-only code
+C. Use GlideRecord directly from ordinary client code
+D. Use g_form in client-side scripts to get or set form values and properties
+48. Which statement about impersonation testing is correct?
+A. Test only while logged in as admin
+B. Impersonate a representative non-admin user to test actual access behavior
+C. Disable security before each test
+D. Assume module visibility proves record access
+
+Unofficial ServiceNow CAD mock exam - original practice questionsPage 35
+49. Which statement about notification event is correct?
+A. Use a dictionary override to create recipients
+B. Configure a notification to respond to an event when decoupling notification logic is useful
+C. Send mail directly from every client script
+D. Use an ACL to format email
+50. Which statement about flow trigger is correct?
+A. Start every flow manually from a browser console
+B. Use an index as an email trigger
+C. Use a field label as the only trigger
+D. Define a trigger that clearly identifies when the flow should start
+
+Unofficial ServiceNow CAD mock exam - original practice questionsPage 36
+Practice Test 4 - Answer Key
+1. A - Transform Maps control source-to-target field mapping. [Working with External Data]
+2. C - onSubmit can return false to stop form submission. [Application User Interface]
+3. A - Client-callable Script Includes should expose only validated, necessary data. [Application Automation]
+4. A - Async rules run later and reduce transaction response time. [Application User Interface]
+5. B - Script Includes promote reusable server-side logic. [Application Automation]
+6. D - Dictionary entries define field metadata and platform behavior. [Designing and Creating an Application]
+7. B - ServiceNow source control integration manages scoped application files and versions. [Managing Applications]
+8. A - onChange is designed for field-change behavior on forms. [Application User Interface]
+9. D - UI Policies provide declarative form behavior. [Application User Interface]
+10. A - A Reference field stores a link to a record on another table. [Designing and Creating an Application]
+11. A - Choice fields standardize allowed values and improve reporting. [Designing and Creating an Application]
+12. B - GlideAjax provides controlled asynchronous client-to-server calls. [Application User Interface]
+13. B - Application properties centralize configuration outside code. [Application Automation]
+14. B - Modules are navigation entries within an application menu. [Designing and Creating an Application]
+15. A - Table extension supports reuse of fields and behavior through inheritance. [Designing and Creating an Application]
+16. C - ServiceNow applications are strongest for structured, repeatable workflows that benefit from platform services. [Designing and
+Creating an Application]
+17. A - Import sets provide a staging area for external data. [Working with External Data]
+18. B - Client Scripts run in the browser and can respond to form events. [Application User Interface]
+19. A - Debug Security Rules shows ACL evaluation details. [Security and Restricting Access]
+20. A - A clear branching strategy helps control parallel development. [Managing Applications]
+21. C - Before rules efficiently modify the record being saved. [Application User Interface]
+22. C - Module roles control navigation, while ACLs must still protect the data. [Security and Restricting Access]
+23. A - Correct field types improve validation, querying, and user experience. [Designing and Creating an Application]
+24. D - ACLs enforce server-side access to data and operations. [Security and Restricting Access]
+25. A - Robust integrations evaluate status codes and error responses. [Working with External Data]
+26. C - Cross-scope privileges control access between scoped applications. [Security and Restricting Access]
+27. B - Conflict resolution protects the intended application state. [Managing Applications]
+28. C - gs.hasRole() is a server-side role check, though ACL roles should be used directly when possible. [Security and Restricting
+Access]
+29. D - Business Rules run server-side around record operations. [Application User Interface]
+30. A - Focused commits improve traceability and review. [Managing Applications]
+31. A - Coalesce fields determine whether a transform updates an existing record or inserts a new one. [Working with External Data]
+32. D - Inbound email processing can create or update application records. [Application Automation]
+33. B - After rules are suitable for actions that depend on a completed save. [Application User Interface]
+34. D - Application scope isolates and protects application artifacts. [Designing and Creating an Application]
+35. D - Scheduled Script Executions run server code on a schedule. [Application Automation]
+36. C - Transform scripts support server-side import customization. [Working with External Data]
+37. D - Reusable actions and subflows improve consistency and maintenance. [Application Automation]
+38. A - Flow Designer provides low-code process automation. [Application Automation]
+39. B - A junction table is the normalized design for many-to-many relationships. [Designing and Creating an Application]
+40. B - ACL evaluation protects access across interfaces, not just forms. [Security and Restricting Access]
+41. D - A table with appropriately typed fields provides a maintainable data model. [Designing and Creating an Application]
+
+Unofficial ServiceNow CAD mock exam - original practice questionsPage 37
+42. C - Field ACLs enforce server-side field access. [Security and Restricting Access]
+43. A - Post-deployment validation should cover major functional and security paths. [Managing Applications]
+44. C - gs.eventQueue() is used server-side to generate events. [Application Automation]
+45. B - Application Access settings define permitted operations from other scopes. [Security and Restricting Access]
+46. B - Least privilege reduces unnecessary access and risk. [Security and Restricting Access]
+47. D - g_form is the standard client-side form API. [Application User Interface]
+48. B - Impersonation helps validate the effective user experience and permissions. [Security and Restricting Access]
+49. B - Event-driven notifications separate business logic from communication. [Application Automation]
+50. D - A flow requires a valid trigger such as record creation, update, schedule, or application event. [Application Automation]
+
+Unofficial ServiceNow CAD mock exam - original practice questionsPage 38
+Practice Test 5
+50 questions | Suggested time: 70 minutes | Choose one best answer.
+1. In a scoped ServiceNow application, which approach is MOST appropriate for application fit?
+A. A one-time calculation best handled in a spreadsheet
+B. A hardware driver that must run in the operating system
+C. A repeatable business process needing structured records, workflow, security, and reporting
+D. A static public brochure with no platform data
+2. In a scoped ServiceNow application, which approach is MOST appropriate for ACL purpose?
+A. Use module order to prevent API access
+B. Hide a field on one form and assume the data is secure
+C. Use Access Control rules to authorize operations on tables, records, and fields
+D. Use UI Policies as the primary data security layer
+3. In a scoped ServiceNow application, which approach is MOST appropriate for table extension?
+A. Extend an existing table when the new records need its inherited fields and behavior
+B. Extend a table to bypass all ACL evaluation
+C. Use extension only to change a form label
+D. Duplicate every field into an unrelated table
+4. Which statement about REST testing is correct?
+A. Test a REST method with safe sample data and inspect status, headers, and response body
+B. Treat any HTTP response as success
+C. Test destructive calls first in production
+D. Ignore authentication errors and retry endlessly
+5. Which statement about protection policy is correct?
+A. Use them to replace user ACLs
+B. Use application artifact protection policies appropriately when distributing scoped applications
+C. Use them to set list pagination
+D. Use them to encrypt all network traffic
+6. In a scoped ServiceNow application, which approach is MOST appropriate for application property?
+A. Create a new field for every configuration flag
+B. Store configurable application behavior in an application property and retrieve it with the appropriate API
+C. Use table labels as passwords
+D. Hard-code environment-specific values throughout scripts
+7. In a scoped ServiceNow application, which approach is MOST appropriate for Flow Designer?
+A. Use a schema map to schedule tasks
+B. Use an ACL to send all notifications
+C. Use Flow Designer for maintainable trigger-and-action automation where supported
+D. Use a form layout as a process engine
+8. Which statement about client diagnostics is correct?
+A. Use browser developer tools and ServiceNow client-side debugging tools to inspect client errors
+B. Use an email notification to display stack traces
+C. Use database indexes to read JavaScript console errors
+D. Use an update set preview as the only client debugger
+
+Unofficial ServiceNow CAD mock exam - original practice questionsPage 39
+9. Which statement about deployment validation is correct?
+A. Test only as admin
+B. Validate only that the application menu exists
+C. After deployment, run smoke tests for key roles, data access, automations, and integrations
+D. Assume a successful install means all functions work
+10. Which statement about record producer is correct?
+A. Use it to replace all ACLs
+B. Use it as a database index
+C. Use it only to delete tables
+D. Use a Record Producer to let users create records through a catalog-style interface
+11. In a scoped ServiceNow application, which approach is MOST appropriate for onSubmit?
+A. Use an onSubmit Client Script to prevent submission when client-side conditions fail
+B. Use a module visibility rule
+C. Use a Scheduled Job to validate before submit
+D. Use an onLoad script to cancel every save
+12. Which statement about script ACL is correct?
+A. Use an ACL script when authorization depends on logic not covered by roles or conditions alone
+B. Use an email template to check access
+C. Use a Client Script because it cannot be bypassed
+D. Use a transform map for interactive reads
+13. In a scoped ServiceNow application, which approach is MOST appropriate for reference field?
+A. Use a Journal field for relational joins
+B. Use an HTML field to enforce referential integrity
+C. Use a Choice field to store a sys_id manually
+D. Use a Reference field to relate a record to one record on another table
+14. In a scoped ServiceNow application, which approach is MOST appropriate for source control?
+A. Use Git to store arbitrary instance records automatically
+B. Link a scoped application to a supported Git repository to manage application versions
+C. Commit production credentials with the application
+D. Use source control as a replacement for ACLs
+15. In a scoped ServiceNow application, which approach is MOST appropriate for UI policy?
+A. Use a Transform Map for form visibility
+B. Use a REST Message for mandatory fields
+C. Use an ACL only to change field color
+D. Use a UI Policy for condition-based mandatory, visible, or read-only behavior without scripting when possible
+16. Which statement about data model normalization is correct?
+A. Separate reusable entities into related tables instead of repeating the same attributes
+B. Create duplicate tables for each user
+C. Copy the same customer details into every transaction record
+D. Store all records in one unstructured text field
+
+Unofficial ServiceNow CAD mock exam - original practice questionsPage 40
+17. Which statement about email recipients is correct?
+A. Send all application mail to every user
+B. Use a table index as an email address
+C. Use data-driven recipient fields, groups, or event parameters and validate who should receive the message
+D. Hard-code a personal email in every script
+18. In a scoped ServiceNow application, which approach is MOST appropriate for g_form?
+A. Use gs in client-only code
+B. Use g_form in client-side scripts to get or set form values and properties
+C. Use current in a browser Client Script
+D. Use GlideRecord directly from ordinary client code
+19. In a scoped ServiceNow application, which approach is MOST appropriate for Debug Security Rules?
+A. Use Debug Security Rules to see which ACLs pass or fail for an access attempt
+B. Use Schema Map to trace ACL execution
+C. Use Form Designer to grant roles
+D. Use an import set log for client ACLs
+20. In a scoped ServiceNow application, which approach is MOST appropriate for flow action?
+A. Use module titles as reusable code
+B. Copy long logic into every flow
+C. Put credentials directly into action labels
+D. Use reusable actions or subflows for logic shared across automations
+21. In a scoped ServiceNow application, which approach is MOST appropriate for impersonation testing?
+A. Assume module visibility proves record access
+B. Impersonate a representative non-admin user to test actual access behavior
+C. Test only while logged in as admin
+D. Disable security before each test
+22. In a scoped ServiceNow application, which approach is MOST appropriate for flow trigger?
+A. Define a trigger that clearly identifies when the flow should start
+B. Use an index as an email trigger
+C. Start every flow manually from a browser console
+D. Use a field label as the only trigger
+23. Which statement about application install is correct?
+A. Copy random XML files from unknown sources
+B. Use a client script to install plugins
+C. Install applications from the appropriate ServiceNow source and review dependencies and compatibility
+D. Install directly without checking target release
+24. Which statement about display rule is correct?
+A. Use a transform script on every form load
+B. Use a Scheduled Job to populate browser variables
+C. Use a display Business Rule to place server-derived data in g_scratchpad for a form
+D. Use an ACL to render HTML
+
+Unofficial ServiceNow CAD mock exam - original practice questionsPage 41
+25. In a scoped ServiceNow application, which approach is MOST appropriate for onChange?
+A. Use an onChange Client Script when logic should run after a field value changes
+B. Use an inbound email action
+C. Use onLoad only after every field change
+D. Use a Business Rule that requires form reload for all UI feedback
+26. Which statement about auto-number is correct?
+A. Use the record short description as the guaranteed unique key
+B. Ask users to invent identifiers with no validation
+C. Use the sys_updated_on value as the display number
+D. Configure an auto-number when each record needs a readable unique identifier
+27. In a scoped ServiceNow application, which approach is MOST appropriate for role check?
+A. Use g_form.hasRole() in a Business Rule
+B. Use gs.hasRole() in appropriate server-side security logic to test roles
+C. Compare the user name to a hard-coded password
+D. Store roles in a client-visible variable and trust it
+28. Which statement about workflow context is correct?
+A. Inspect flow execution details or workflow context when diagnosing automation
+B. Delete all execution records before review
+C. Disable logging and retry blindly
+D. Use only the browser color theme to debug
+29. Which statement about order of operations is correct?
+A. Place identical logic in multiple engines
+B. Consider Business Rule timing and automation interactions to avoid recursion and unintended updates
+C. Ignore whether logic runs before or after persistence
+D. Call current.update() in every Business Rule
+30. Which statement about admin override is correct?
+A. Understand the ACL admin override setting and test behavior intentionally
+B. Use admin override to grant anonymous access
+C. Assume admin override can never be changed
+D. The setting controls only form color
+31. Which statement about delegated development is correct?
+A. Use delegated development permissions to let approved developers work on an application without full admin
+B. Use delegated development to expose all global applications
+C. Grant admin to every contributor
+D. Use module visibility as developer authorization
+32. Which statement about number field is correct?
+A. Use an Integer, Decimal, or Currency field when numeric operations and validation are needed
+B. Use a String field and rely on users to type numbers correctly
+C. Use a Reference field with no target table
+D. Use a Journal field for arithmetic
+
+Unofficial ServiceNow CAD mock exam - original practice questionsPage 42
+33. In a scoped ServiceNow application, which approach is MOST appropriate for client script?
+A. Use a module to validate typed characters
+B. Use a Client Script for browser-side form behavior such as reacting to field changes
+C. Use a Scheduled Script Execution for immediate form interaction
+D. Use an ACL to set a field value onChange
+34. Which statement about HTTP status is correct?
+A. Assume only 200 can ever be successful
+B. Handle expected success and error HTTP status codes explicitly
+C. Parse the response before checking whether the request failed
+D. Ignore 400 and 500 responses
+35. Which statement about schema map is correct?
+A. Use it to execute production scripts
+B. Use it to encrypt attachments
+C. Use Schema Map to visualize table relationships and extensions
+D. Use it to impersonate users
+36. Which statement about secure server API is correct?
+A. Rely only on disabled browser buttons
+B. Trust hidden client variables for authorization
+C. Send privileged decisions entirely to the client
+D. Perform sensitive validation and authorization on the server even when client checks exist
+37. In a scoped ServiceNow application, which approach is MOST appropriate for many-to-many?
+A. Put comma-separated sys_ids in a string field
+B. Add hundreds of true/false fields
+C. Create a system property for each relationship
+D. Use a many-to-many table when records on both sides can relate to multiple records
+38. Which statement about display value is correct?
+A. Set an appropriate display field so references show a meaningful value
+B. Expose only sys_id values to end users
+C. Make every field the display field
+D. Remove all labels from reference fields
+39. Which statement about record ownership is correct?
+A. Use a choice value as a password
+B. Use an ACL condition or script to compare the record with the current user when ownership matters
+C. Hide the Assigned to field and allow all reads
+D. Use form color to indicate privacy
+40. Which statement about server script debugging is correct?
+A. Change production data randomly until it works
+B. Use Script Debugger, logs, and appropriate test records to inspect server-side behavior
+C. Use browser CSS to trace Business Rules
+D. Disable all ACLs permanently
+
+Unofficial ServiceNow CAD mock exam - original practice questionsPage 43
+41. Which statement about form layout is correct?
+A. Use Form Designer or form configuration to organize fields, sections, and related lists
+B. Modify the database schema by dragging browser pixels
+C. Use an import set to reorder a form
+D. Use a REST Message to add sections
+42. Which statement about REST Message is correct?
+A. Create a REST Message with methods, endpoint, authentication, headers, and parameters for outbound REST
+B. Use a UI Policy to call every external API
+C. Use a schema map as the HTTP client
+D. Store the endpoint in a form label only
+43. Which statement about recursion avoidance is correct?
+A. Convert every rule into a client script
+B. Use repeated updates to guarantee correctness
+C. Disable all Business Rules globally
+D. Avoid unnecessary current.update() calls inside Business Rules on the same record
+44. Which statement about credentials is correct?
+A. Email credentials to every developer
+B. Use ServiceNow credential and connection mechanisms instead of hard-coding secrets in scripts
+C. Store tokens in module names
+D. Put usernames and passwords in client scripts
+45. In a scoped ServiceNow application, which approach is MOST appropriate for import set?
+A. Import every file directly into arbitrary production columns with no mapping
+B. Use a module as a staging table
+C. Use a UI Policy to parse CSV rows
+D. Load external file data into an import set table before transforming it to a target table
+46. Which statement about flow testing is correct?
+A. Disable error handling during validation
+B. Test a flow with representative input, inspect each step, and confirm resulting records
+C. Publish directly to production without a test
+D. Judge success only by the flow name
+47. In a scoped ServiceNow application, which approach is MOST appropriate for event queue?
+A. Use the schema map to queue jobs
+B. Use gs.eventQueue() to place an event on the event queue for downstream processing
+C. Use a module to fire notifications
+D. Use g_form.addInfoMessage() to create a server event
+48. Which statement about code review is correct?
+A. Use code review to inspect changes for quality, security, scope, and maintainability
+B. Approve changes based only on file count
+C. Skip review for server-side security scripts
+D. Review only labels and ignore logic
+
+Unofficial ServiceNow CAD mock exam - original practice questionsPage 44
+49. In a scoped ServiceNow application, which approach is MOST appropriate for table creation?
+A. Create a custom table and define fields that model the business records
+B. Create only a module and avoid a table
+C. Store every value in one long string field
+D. Use a system property as the primary record store
+50. In a scoped ServiceNow application, which approach is MOST appropriate for ACL evaluation?
+A. ACLs run only for administrators
+B. Form visibility overrides ACLs
+C. A user must satisfy the applicable ACL requirements for the requested operation
+D. Passing one unrelated ACL grants all access
+
+Unofficial ServiceNow CAD mock exam - original practice questionsPage 45
+Practice Test 5 - Answer Key
+1. C - ServiceNow applications are strongest for structured, repeatable workflows that benefit from platform services. [Designing and
+Creating an Application]
+2. C - ACLs enforce server-side access to data and operations. [Security and Restricting Access]
+3. A - Table extension supports reuse of fields and behavior through inheritance. [Designing and Creating an Application]
+4. A - Integration testing should verify HTTP status and response content. [Working with External Data]
+5. B - Protection policies help protect application intellectual property and artifacts. [Security and Restricting Access]
+6. B - Application properties centralize configuration outside code. [Application Automation]
+7. C - Flow Designer provides low-code process automation. [Application Automation]
+8. A - Browser and platform diagnostics help identify client-side script issues. [Application User Interface]
+9. C - Post-deployment validation should cover major functional and security paths. [Managing Applications]
+10. D - Record Producers provide a simplified request interface that creates records. [Application User Interface]
+11. A - onSubmit can return false to stop form submission. [Application User Interface]
+12. A - ACL scripts support contextual server-side authorization. [Security and Restricting Access]
+13. D - A Reference field stores a link to a record on another table. [Designing and Creating an Application]
+14. B - ServiceNow source control integration manages scoped application files and versions. [Managing Applications]
+15. D - UI Policies provide declarative form behavior. [Application User Interface]
+16. A - A normalized model reduces duplication and improves consistency. [Designing and Creating an Application]
+17. C - Data-driven recipient configuration is safer and easier to maintain. [Application Automation]
+18. B - g_form is the standard client-side form API. [Application User Interface]
+19. A - Debug Security Rules shows ACL evaluation details. [Security and Restricting Access]
+20. D - Reusable actions and subflows improve consistency and maintenance. [Application Automation]
+21. B - Impersonation helps validate the effective user experience and permissions. [Security and Restricting Access]
+22. A - A flow requires a valid trigger such as record creation, update, schedule, or application event. [Application Automation]
+23. C - Managed installation requires trusted sources and compatibility checks. [Managing Applications]
+24. C - Display rules can prepare server data before a form is shown. [Application User Interface]
+25. A - onChange is designed for field-change behavior on forms. [Application User Interface]
+26. D - Auto-numbering provides consistent human-readable identifiers. [Designing and Creating an Application]
+27. B - gs.hasRole() is a server-side role check, though ACL roles should be used directly when possible. [Security and Restricting
+Access]
+28. A - Execution details show inputs, steps, and errors for troubleshooting. [Application Automation]
+29. B - Understanding execution timing prevents loops and inconsistent outcomes. [Application Automation]
+30. A - The admin override option affects whether admin users automatically pass that ACL. [Security and Restricting Access]
+31. A - Delegated development provides controlled development access. [Managing Applications]
+32. A - Numeric field types support proper sorting, validation, and calculation. [Designing and Creating an Application]
+33. B - Client Scripts run in the browser and can respond to form events. [Application User Interface]
+34. B - Robust integrations evaluate status codes and error responses. [Working with External Data]
+35. C - Schema Map helps developers inspect a data model visually. [Designing and Creating an Application]
+36. D - Client controls improve UX but do not replace server-side security. [Security and Restricting Access]
+37. D - A junction table is the normalized design for many-to-many relationships. [Designing and Creating an Application]
+38. A - A meaningful display value makes referenced records understandable. [Designing and Creating an Application]
+39. B - Record-aware ACL logic can enforce owner-based access. [Security and Restricting Access]
+40. B - ServiceNow provides server-side debugging and logging tools for controlled troubleshooting. [Application User Interface]
+41. A - Form configuration tools control the record form layout. [Application User Interface]
+
+Unofficial ServiceNow CAD mock exam - original practice questionsPage 46
+42. A - REST Messages organize outbound REST integration configuration. [Working with External Data]
+43. D - Updating the same record from its Business Rule can cause recursion or extra processing. [Application Automation]
+44. B - Managed credentials reduce exposure and improve maintainability. [Working with External Data]
+45. D - Import sets provide a staging area for external data. [Working with External Data]
+46. B - Controlled flow tests reveal input, action, and permission problems. [Application Automation]
+47. B - gs.eventQueue() is used server-side to generate events. [Application Automation]
+48. A - Code review reduces defects and security issues before promotion. [Managing Applications]
+49. A - A table with appropriately typed fields provides a maintainable data model. [Designing and Creating an Application]
+50. C - ACL evaluation protects access across interfaces, not just forms. [Security and Restricting Access]
+
+Unofficial ServiceNow CAD mock exam - original practice questionsPage 47
+Practice Test 6
+50 questions | Suggested time: 70 minutes | Choose one best answer.
+1. In a scoped ServiceNow application, which approach is MOST appropriate for flow testing?
+A. Publish directly to production without a test
+B. Judge success only by the flow name
+C. Test a flow with representative input, inspect each step, and confirm resulting records
+D. Disable error handling during validation
+2. In a scoped ServiceNow application, which approach is MOST appropriate for application scope?
+A. Scope changes the instance time zone
+B. Use global scope so no protections apply
+C. Scope automatically grants every role access
+D. Use a scoped application to namespace artifacts and control cross-scope access
+3. In a scoped ServiceNow application, which approach is MOST appropriate for number field?
+A. Use a String field and rely on users to type numbers correctly
+B. Use a Reference field with no target table
+C. Use a Journal field for arithmetic
+D. Use an Integer, Decimal, or Currency field when numeric operations and validation are needed
+4. In a scoped ServiceNow application, which approach is MOST appropriate for transform scripts?
+A. Use transform scripts for controlled import logic that cannot be handled by direct field maps
+B. Disable target validation permanently
+C. Put credentials in the source file
+D. Use client-only g_form methods during a background transform
+5. In a scoped ServiceNow application, which approach is MOST appropriate for coalesce?
+A. Use a journal field as a universal key
+B. Mark suitable transform map fields as coalesce to identify matching target records
+C. Use coalesce only to change form labels
+D. Coalesce every field so no record can transform
+6. In a scoped ServiceNow application, which approach is MOST appropriate for delegated development?
+A. Grant admin to every contributor
+B. Use delegated development permissions to let approved developers work on an application without full admin
+C. Use delegated development to expose all global applications
+D. Use module visibility as developer authorization
+7. In a scoped ServiceNow application, which approach is MOST appropriate for module visibility?
+A. Use a form section to grant access
+B. Rely on module roles as the only protection for table records
+C. Assign roles to application menus or modules to limit navigation visibility
+D. Use list sorting to hide unauthorized data
+8. In a scoped ServiceNow application, which approach is MOST appropriate for code review?
+A. Skip review for server-side security scripts
+B. Use code review to inspect changes for quality, security, scope, and maintainability
+C. Approve changes based only on file count
+D. Review only labels and ignore logic
+
+Unofficial ServiceNow CAD mock exam - original practice questionsPage 48
+9. In a scoped ServiceNow application, which approach is MOST appropriate for server script debugging?
+A. Use browser CSS to trace Business Rules
+B. Disable all ACLs permanently
+C. Use Script Debugger, logs, and appropriate test records to inspect server-side behavior
+D. Change production data randomly until it works
+10. In a scoped ServiceNow application, which approach is MOST appropriate for record producer?
+A. Use it as a database index
+B. Use it only to delete tables
+C. Use a Record Producer to let users create records through a catalog-style interface
+D. Use it to replace all ACLs
+11. In a scoped ServiceNow application, which approach is MOST appropriate for async rule?
+A. Use it when the user must see an immediate blocking error
+B. Use an async Business Rule for non-immediate server work that should not delay the user transaction
+C. Use it to control module visibility
+D. Use it to set mandatory fields in the browser
+12. In a scoped ServiceNow application, which approach is MOST appropriate for pull/conflict?
+A. Pull remote changes and resolve source control conflicts carefully before continuing
+B. Ignore conflicts and force overwrite every time
+C. Resolve conflict by disabling the application
+D. Use a UI Policy to merge Git branches
+13. In a scoped ServiceNow application, which approach is MOST appropriate for secure server API?
+A. Rely only on disabled browser buttons
+B. Perform sensitive validation and authorization on the server even when client checks exist
+C. Trust hidden client variables for authorization
+D. Send privileged decisions entirely to the client
+14. In a scoped ServiceNow application, which approach is MOST appropriate for form layout?
+A. Use Form Designer or form configuration to organize fields, sections, and related lists
+B. Use a REST Message to add sections
+C. Use an import set to reorder a form
+D. Modify the database schema by dragging browser pixels
+15. In a scoped ServiceNow application, which approach is MOST appropriate for dictionary attributes?
+A. Put all field behavior in a module title
+B. Use only browser CSS to define the data type
+C. Configure field behavior through the dictionary entry and appropriate attributes
+D. Edit the database directly outside ServiceNow
+16. In a scoped ServiceNow application, which approach is MOST appropriate for protection policy?
+A. Use application artifact protection policies appropriately when distributing scoped applications
+B. Use them to replace user ACLs
+C. Use them to set list pagination
+D. Use them to encrypt all network traffic
+
+Unofficial ServiceNow CAD mock exam - original practice questionsPage 49
+17. In a scoped ServiceNow application, which approach is MOST appropriate for REST testing?
+A. Test a REST method with safe sample data and inspect status, headers, and response body
+B. Ignore authentication errors and retry endlessly
+C. Test destructive calls first in production
+D. Treat any HTTP response as success
+18. In a scoped ServiceNow application, which approach is MOST appropriate for before rule?
+A. Use a display rule to import CSV data
+B. Use an after rule when the value must be written without another update
+C. Use a before Business Rule to change the current record before it is saved
+D. Use an async rule to block the user immediately
+19. In a scoped ServiceNow application, which approach is MOST appropriate for data model normalization?
+A. Separate reusable entities into related tables instead of repeating the same attributes
+B. Copy the same customer details into every transaction record
+C. Create duplicate tables for each user
+D. Store all records in one unstructured text field
+20. In a scoped ServiceNow application, which approach is MOST appropriate for admin override?
+A. Understand the ACL admin override setting and test behavior intentionally
+B. The setting controls only form color
+C. Assume admin override can never be changed
+D. Use admin override to grant anonymous access
+21. In a scoped ServiceNow application, which approach is MOST appropriate for commit?
+A. Use commits to delete audit history
+B. Include passwords to simplify deployment
+C. Commit coherent application changes with a meaningful message
+D. Commit random partial changes with no context
+22. In a scoped ServiceNow application, which approach is MOST appropriate for recursion avoidance?
+A. Use repeated updates to guarantee correctness
+B. Disable all Business Rules globally
+C. Convert every rule into a client script
+D. Avoid unnecessary current.update() calls inside Business Rules on the same record
+23. In a scoped ServiceNow application, which approach is MOST appropriate for schema map?
+A. Use Schema Map to visualize table relationships and extensions
+B. Use it to encrypt attachments
+C. Use it to execute production scripts
+D. Use it to impersonate users
+24. In a scoped ServiceNow application, which approach is MOST appropriate for Script Include?
+A. Put reusable server-side functions in a Script Include
+B. Use a module as a function library
+C. Duplicate the same function in every Business Rule
+D. Store executable code in a choice label
+
+Unofficial ServiceNow CAD mock exam - original practice questionsPage 50
+25. In a scoped ServiceNow application, which approach is MOST appropriate for email recipients?
+A. Send all application mail to every user
+B. Use data-driven recipient fields, groups, or event parameters and validate who should receive the message
+C. Use a table index as an email address
+D. Hard-code a personal email in every script
+26. In a scoped ServiceNow application, which approach is MOST appropriate for display value?
+A. Remove all labels from reference fields
+B. Set an appropriate display field so references show a meaningful value
+C. Expose only sys_id values to end users
+D. Make every field the display field
+27. In a scoped ServiceNow application, which approach is MOST appropriate for choice field?
+A. Use free text when consistent reporting is required
+B. Use a Reference field without a related table
+C. Use an Attachment field for option values
+D. Use a Choice field for a controlled set of stable values
+28. In a scoped ServiceNow application, which approach is MOST appropriate for display rule?
+A. Use an ACL to render HTML
+B. Use a transform script on every form load
+C. Use a display Business Rule to place server-derived data in g_scratchpad for a form
+D. Use a Scheduled Job to populate browser variables
+29. In a scoped ServiceNow application, which approach is MOST appropriate for GlideAjax?
+A. Use a UI Policy to query remote tables
+B. Expose administrator credentials in JavaScript
+C. Use synchronous GlideRecord in the browser
+D. Use GlideAjax to call a client-callable Script Include for server data without reloading the form
+30. In a scoped ServiceNow application, which approach is MOST appropriate for module purpose?
+A. Create a module to store table data
+B. Use a module as a server-side API
+C. Create an application module to give users navigation to a list, record, or page
+D. Use a module instead of an ACL
+31. In a scoped ServiceNow application, which approach is MOST appropriate for least privilege?
+A. Give admin to avoid troubleshooting authorization
+B. Expose records publicly and filter them in the UI
+C. Grant only the roles and privileges required for the user or application task
+D. Put all users in the same elevated group
+32. In a scoped ServiceNow application, which approach is MOST appropriate for REST Message?
+A. Create a REST Message with methods, endpoint, authentication, headers, and parameters for outbound REST
+B. Store the endpoint in a form label only
+C. Use a UI Policy to call every external API
+D. Use a schema map as the HTTP client
+
+Unofficial ServiceNow CAD mock exam - original practice questionsPage 51
+33. In a scoped ServiceNow application, which approach is MOST appropriate for client-callable include?
+A. Put server secrets into the client script
+B. Return unrestricted records to any caller
+C. Mark and design a Script Include appropriately for controlled GlideAjax use
+D. Make every Script Include public without validation
+34. In a scoped ServiceNow application, which approach is MOST appropriate for field type?
+A. Use Journal for numeric calculations
+B. Choose field types based on the data and required behavior, such as Date/Time, Reference, or Choice
+C. Use String for every field regardless of purpose
+D. Use HTML for all relationships
+35. In a scoped ServiceNow application, which approach is MOST appropriate for after rule?
+A. Use a dictionary label to trigger integrations
+B. Use an after Business Rule when related records should be updated after the current record is committed
+C. Use an onLoad Client Script for server-side related updates
+D. Use a module to create audit entries
+36. In a scoped ServiceNow application, which approach is MOST appropriate for application access?
+A. Use auto-numbering to block other scopes
+B. Configure table Application Access settings to control cross-scope operations
+C. Use a UI Action label to control cross-scope calls
+D. Use a report filter as the security boundary
+37. In a scoped ServiceNow application, which approach is MOST appropriate for field ACL?
+A. Create a field ACL when access to a specific field must be more restrictive than table access
+B. Use a UI Policy as confidential-data protection
+C. Create only a module title condition
+D. Use a client script to erase the field visually
+38. In a scoped ServiceNow application, which approach is MOST appropriate for branching?
+A. Use branches deliberately and avoid conflicting instance work when collaborating
+B. Use branching to bypass code review
+C. Have every developer overwrite the same branch without coordination
+D. Create a branch for each record update automatically
+39. In a scoped ServiceNow application, which approach is MOST appropriate for auto-number?
+A. Ask users to invent identifiers with no validation
+B. Configure an auto-number when each record needs a readable unique identifier
+C. Use the sys_updated_on value as the display number
+D. Use the record short description as the guaranteed unique key
+40. In a scoped ServiceNow application, which approach is MOST appropriate for scheduled execution?
+A. Use Scheduled Script Execution for server-side work that must run at a defined time or interval
+B. Use an onChange Client Script when no user is online
+C. Use a UI Policy as a nightly batch
+D. Use a form section as a timer
+
+Unofficial ServiceNow CAD mock exam - original practice questionsPage 52
+41. In a scoped ServiceNow application, which approach is MOST appropriate for business rule?
+A. Use a Business Rule for server-side logic triggered by database operations
+B. Use CSS for data validation on insert
+C. Use a Client Script for background imports with no browser
+D. Use a module as a database trigger
+42. In a scoped ServiceNow application, which approach is MOST appropriate for workflow context?
+A. Inspect flow execution details or workflow context when diagnosing automation
+B. Disable logging and retry blindly
+C. Use only the browser color theme to debug
+D. Delete all execution records before review
+43. In a scoped ServiceNow application, which approach is MOST appropriate for cross-scope privilege?
+A. Review and grant only required cross-scope application access privileges
+B. Move all artifacts to global scope
+C. Disable application scope security
+D. Allow every application unrestricted access by default
+44. In a scoped ServiceNow application, which approach is MOST appropriate for client diagnostics?
+A. Use database indexes to read JavaScript console errors
+B. Use an email notification to display stack traces
+C. Use browser developer tools and ServiceNow client-side debugging tools to inspect client errors
+D. Use an update set preview as the only client debugger
+45. In a scoped ServiceNow application, which approach is MOST appropriate for transform map?
+A. Use a Transform Map to define how source fields populate target fields
+B. Use an ACL to rename CSV headers
+C. Use a form section as a field map
+D. Use a Client Script to map spreadsheet columns during a background import
+46. In a scoped ServiceNow application, which approach is MOST appropriate for order of operations?
+A. Ignore whether logic runs before or after persistence
+B. Call current.update() in every Business Rule
+C. Place identical logic in multiple engines
+D. Consider Business Rule timing and automation interactions to avoid recursion and unintended updates
+47. In a scoped ServiceNow application, which approach is MOST appropriate for record ownership?
+A. Use a choice value as a password
+B. Hide the Assigned to field and allow all reads
+C. Use form color to indicate privacy
+D. Use an ACL condition or script to compare the record with the current user when ownership matters
+48. In a scoped ServiceNow application, which approach is MOST appropriate for inbound email action?
+A. Use an outbound notification to parse incoming mail
+B. Use an ACL to create email records
+C. Use a form layout to receive SMTP
+D. Use an Inbound Email Action or email flow to process qualifying incoming messages
+
+Unofficial ServiceNow CAD mock exam - original practice questionsPage 53
+49. In a scoped ServiceNow application, which approach is MOST appropriate for script ACL?
+A. Use a Client Script because it cannot be bypassed
+B. Use an ACL script when authorization depends on logic not covered by roles or conditions alone
+C. Use an email template to check access
+D. Use a transform map for interactive reads
+50. In a scoped ServiceNow application, which approach is MOST appropriate for notification event?
+A. Use an ACL to format email
+B. Send mail directly from every client script
+C. Use a dictionary override to create recipients
+D. Configure a notification to respond to an event when decoupling notification logic is useful
+
+Unofficial ServiceNow CAD mock exam - original practice questionsPage 54
+Practice Test 6 - Answer Key
+1. C - Controlled flow tests reveal input, action, and permission problems. [Application Automation]
+2. D - Application scope isolates and protects application artifacts. [Designing and Creating an Application]
+3. D - Numeric field types support proper sorting, validation, and calculation. [Designing and Creating an Application]
+4. A - Transform scripts support server-side import customization. [Working with External Data]
+5. B - Coalesce fields determine whether a transform updates an existing record or inserts a new one. [Working with External Data]
+6. B - Delegated development provides controlled development access. [Managing Applications]
+7. C - Module roles control navigation, while ACLs must still protect the data. [Security and Restricting Access]
+8. B - Code review reduces defects and security issues before promotion. [Managing Applications]
+9. C - ServiceNow provides server-side debugging and logging tools for controlled troubleshooting. [Application User Interface]
+10. C - Record Producers provide a simplified request interface that creates records. [Application User Interface]
+11. B - Async rules run later and reduce transaction response time. [Application User Interface]
+12. A - Conflict resolution protects the intended application state. [Managing Applications]
+13. B - Client controls improve UX but do not replace server-side security. [Security and Restricting Access]
+14. A - Form configuration tools control the record form layout. [Application User Interface]
+15. C - Dictionary entries define field metadata and platform behavior. [Designing and Creating an Application]
+16. A - Protection policies help protect application intellectual property and artifacts. [Security and Restricting Access]
+17. A - Integration testing should verify HTTP status and response content. [Working with External Data]
+18. C - Before rules efficiently modify the record being saved. [Application User Interface]
+19. A - A normalized model reduces duplication and improves consistency. [Designing and Creating an Application]
+20. A - The admin override option affects whether admin users automatically pass that ACL. [Security and Restricting Access]
+21. C - Focused commits improve traceability and review. [Managing Applications]
+22. D - Updating the same record from its Business Rule can cause recursion or extra processing. [Application Automation]
+23. A - Schema Map helps developers inspect a data model visually. [Designing and Creating an Application]
+24. A - Script Includes promote reusable server-side logic. [Application Automation]
+25. B - Data-driven recipient configuration is safer and easier to maintain. [Application Automation]
+26. B - A meaningful display value makes referenced records understandable. [Designing and Creating an Application]
+27. D - Choice fields standardize allowed values and improve reporting. [Designing and Creating an Application]
+28. C - Display rules can prepare server data before a form is shown. [Application User Interface]
+29. D - GlideAjax provides controlled asynchronous client-to-server calls. [Application User Interface]
+30. C - Modules are navigation entries within an application menu. [Designing and Creating an Application]
+31. C - Least privilege reduces unnecessary access and risk. [Security and Restricting Access]
+32. A - REST Messages organize outbound REST integration configuration. [Working with External Data]
+33. C - Client-callable Script Includes should expose only validated, necessary data. [Application Automation]
+34. B - Correct field types improve validation, querying, and user experience. [Designing and Creating an Application]
+35. B - After rules are suitable for actions that depend on a completed save. [Application User Interface]
+36. B - Application Access settings define permitted operations from other scopes. [Security and Restricting Access]
+37. A - Field ACLs enforce server-side field access. [Security and Restricting Access]
+38. A - A clear branching strategy helps control parallel development. [Managing Applications]
+39. B - Auto-numbering provides consistent human-readable identifiers. [Designing and Creating an Application]
+40. A - Scheduled Script Executions run server code on a schedule. [Application Automation]
+41. A - Business Rules run server-side around record operations. [Application User Interface]
+42. A - Execution details show inputs, steps, and errors for troubleshooting. [Application Automation]
+
+Unofficial ServiceNow CAD mock exam - original practice questionsPage 55
+43. A - Cross-scope privileges control access between scoped applications. [Security and Restricting Access]
+44. C - Browser and platform diagnostics help identify client-side script issues. [Application User Interface]
+45. A - Transform Maps control source-to-target field mapping. [Working with External Data]
+46. D - Understanding execution timing prevents loops and inconsistent outcomes. [Application Automation]
+47. D - Record-aware ACL logic can enforce owner-based access. [Security and Restricting Access]
+48. D - Inbound email processing can create or update application records. [Application Automation]
+49. B - ACL scripts support contextual server-side authorization. [Security and Restricting Access]
+50. D - Event-driven notifications separate business logic from communication. [Application Automation]
+
+Unofficial ServiceNow CAD mock exam - original practice questionsPage 56
+Blueprint Summary and Final Review
+Designing and Creating an Application - 20%
+Review the explanations for missed questions in this domain. Recreate the related feature in a Personal Developer Instance, test it as a
+non-admin user where applicable, and verify the result using platform debugging tools.
+Application User Interface - 20%
+Review the explanations for missed questions in this domain. Recreate the related feature in a Personal Developer Instance, test it as a
+non-admin user where applicable, and verify the result using platform debugging tools.
+Security and Restricting Access - 20%
+Review the explanations for missed questions in this domain. Recreate the related feature in a Personal Developer Instance, test it as a
+non-admin user where applicable, and verify the result using platform debugging tools.
+Application Automation - 20%
+Review the explanations for missed questions in this domain. Recreate the related feature in a Personal Developer Instance, test it as a
+non-admin user where applicable, and verify the result using platform debugging tools.
+Working with External Data - 10%
+Review the explanations for missed questions in this domain. Recreate the related feature in a Personal Developer Instance, test it as a
+non-admin user where applicable, and verify the result using platform debugging tools.
+Managing Applications - 10%
+Review the explanations for missed questions in this domain. Recreate the related feature in a Personal Developer Instance, test it as a
+non-admin user where applicable, and verify the result using platform debugging tools.
+Important: ServiceNow updates products and certification blueprints over time. Verify current exam details in the official ServiceNow University
+CAD exam blueprint before scheduling your exam.

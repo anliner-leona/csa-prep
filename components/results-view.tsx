@@ -11,7 +11,7 @@ import {
   Clock,
 } from "lucide-react"
 import { Button } from "@/components/ui/button"
-import { formatTime, isCorrect } from "@/lib/exam"
+import { formatTime, isCorrect, selectedMatchOption } from "@/lib/exam"
 import { questionById, type ExamSession } from "@/hooks/use-exam-session"
 
 const PASS_THRESHOLD = 70
@@ -97,6 +97,12 @@ export function ResultsView({ session, onRestart }: ResultsViewProps) {
           Your Results
         </h1>
       </header>
+
+      {session.order.some((id) => questionById(id).source === "CIS-DF") && (
+        <p className="mb-6 rounded-xl border border-border bg-secondary/50 p-4 text-sm text-muted-foreground">
+          CIS-DF scoring uses the answers highlighted pink in the source PDF. The PDF warns that some highlighted answers may be wrong, so cross-check them before relying on your score.
+        </p>
+      )}
 
       {/* Score summary */}
       <div className="grid gap-6 rounded-2xl border border-border bg-card p-6 sm:grid-cols-[auto_1fr] sm:p-8">
@@ -338,30 +344,66 @@ function ReviewItem({
 
       <p className="mb-4 text-pretty font-medium leading-snug">{q.question}</p>
 
-      <ul className="space-y-2">
-        {q.choices.map((choice) => {
-          const picked = selected.includes(choice.label)
-          let cls = "border-border text-muted-foreground"
-          let icon: React.ReactNode = null
-          if (choice.correct) {
-            cls = "border-success bg-success-muted text-foreground"
-            icon = <Check className="size-4 text-success" />
-          } else if (picked) {
-            cls = "border-error bg-error-muted text-foreground"
-            icon = <X className="size-4 text-error" />
-          }
-          return (
-            <li
-              key={choice.label}
-              className={`flex items-center gap-3 rounded-lg border px-3 py-2 text-sm ${cls}`}
-            >
-              <span className="font-mono font-semibold">{choice.label}.</span>
-              <span className="flex-1 text-pretty">{choice.text}</span>
-              {icon}
-            </li>
-          )
-        })}
-      </ul>
+      {q.matching ? (
+        <ul className="flex flex-col gap-2">
+          {q.matching.map((pair, pairIndex) => {
+            const selectedOptionIndex = selectedMatchOption(selected, pairIndex)
+            const selectedOption = selectedOptionIndex === null
+              ? undefined
+              : q.matchOptions?.[selectedOptionIndex]
+            const correctOptionIndex = q.matchOptions?.indexOf(pair.right) ?? -1
+            const rowCorrect = selectedOptionIndex === correctOptionIndex
+            const rowClass = selectedOption === undefined
+              ? "border-border text-muted-foreground"
+              : rowCorrect
+                ? "border-success bg-success-muted text-foreground"
+                : "border-error bg-error-muted text-foreground"
+
+            return (
+              <li
+                key={pair.left}
+                className={`rounded-lg border px-3 py-3 text-sm ${rowClass}`}
+              >
+                <p className="font-medium text-foreground">{pair.left}</p>
+                <p className="mt-2 text-pretty">
+                  Your match: {selectedOption ?? "Not matched"}
+                  {rowCorrect && selectedOption !== undefined && (
+                    <Check className="ml-2 inline size-4 text-success" aria-label="Correct" />
+                  )}
+                </p>
+                <p className="mt-1 text-pretty text-muted-foreground">
+                  Correct match: <span className="font-medium text-foreground">{pair.right}</span>
+                </p>
+              </li>
+            )
+          })}
+        </ul>
+      ) : (
+        <ul className="flex flex-col gap-2">
+          {q.choices.map((choice) => {
+            const picked = selected.includes(choice.label)
+            let cls = "border-border text-muted-foreground"
+            let icon: React.ReactNode = null
+            if (choice.correct) {
+              cls = "border-success bg-success-muted text-foreground"
+              icon = <Check className="size-4 text-success" />
+            } else if (picked) {
+              cls = "border-error bg-error-muted text-foreground"
+              icon = <X className="size-4 text-error" />
+            }
+            return (
+              <li
+                key={choice.label}
+                className={`flex items-center gap-3 rounded-lg border px-3 py-2 text-sm ${cls}`}
+              >
+                <span className="font-mono font-semibold">{choice.label}.</span>
+                <span className="flex-1 text-pretty">{choice.text}</span>
+                {icon}
+              </li>
+            )
+          })}
+        </ul>
+      )}
     </li>
   )
 }
